@@ -12,43 +12,55 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0b2341; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #2e6aed; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #242225;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #F5F5F5;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #F5F5F5;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #2e6aed;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #242225;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #F5F5F5;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #2e6aed; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #2e6aed; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #242225;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #2e6aed;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #242225;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #F5F5F5;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #F5F5F5;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #2e6aed;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f7f9fd;
-  --surface-color: #ffffff;
+  --background-color: #242225;
+  --surface-color: #242225;
 }
 
 .dark-background {
   --background-color: #060606;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #252525;
+  --surface-color: #242225;
   --contrast-color: #ffffff;
 }
 
@@ -61,9 +73,28 @@
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
 body {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-family: var(--default-font);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  /* Giữ ảnh nền cố định khi cuộn */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/Takumi/584e72e4ff1a17045d1344a4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -9999;
+  /* Rất thấp để không ảnh hưởng tới nội dung */
+  opacity: 1;
 }
 
 a {
@@ -227,7 +258,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--nav-dropdown-color);
     padding: 18px 15px;
     font-size: 14px;
     font-family: var(--nav-font);
@@ -1018,10 +1049,12 @@ section,
 .about .read-more:hover i {
   transform: translate(5px, 0);
 }
+
 .about p {
   text-align: justify;
   text-indent: 1em;
 }
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -1962,4 +1995,11 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+section,
+main,
+.container,
+.page-content {
+  background-color: transparent !important;
 }
