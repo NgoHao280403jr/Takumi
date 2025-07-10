@@ -4,18 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Multi Bootstrap Template</title>
+  <title>TAKUMI</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/Takumi/LogoTakumi-modified.png" rel="icon">
+  <link href="assets/img/Takumi/LogoTakumi-modified.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,15 +50,16 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Trang chủ</a></li>
-          <li><a href="#about">Về chúng tôi </a></li>
-          <li><a href="#services">Dịch vụ</a></li>
-          <li><a href="#portfolio">Sản phẩm</a></li>
-          <li><a href="#team">Đội nhóm</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#hero" class="active" data-i18n="home">Trang chủ</a></li>
+          <li><a href="#about" data-i18n="about">Về chúng tôi </a></li>
+          <li><a href="#services" data-i18n="services">Dịch vụ</a></li>
+          <li><a href="#portfolio" data-i18n="portfolio">Sản phẩm</a></li>
+          <li><a href="#team" data-i18n="team">Đội nhóm</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -69,13 +72,55 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
-          <li><a href="#contact">Liên hệ</a></li>
+          </li> -->
+          <li><a href="#contact" data-i18n="contact">Liên hệ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="#about">Bắt đầu</a>
+      <!-- Language switcher with emoji flags -->
+      <!-- Bootstrap dropdown chọn ngôn ngữ -->
+      <div class="dropdown ms-3">
+        <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button"
+          id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+            <rect width="20" height="15" fill="#DA020E" />
+            <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+          </svg>
+          Tiếng Việt
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="vi">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="#DA020E" />
+                <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+              </svg>
+              Tiếng Việt
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="en">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="#012169" />
+                <path d="M0,0 L20,15 M20,0 L0,15" stroke="white" stroke-width="2" />
+                <path d="M0,0 L20,15 M20,0 L0,15" stroke="#C8102E" stroke-width="1" />
+                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="white" stroke-width="3" />
+                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="#C8102E" stroke-width="2" />
+              </svg>
+              English
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="ja">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="white" />
+                <circle cx="10" cy="7.5" r="4" fill="#BC002D" />
+              </svg>
+              日本語
+            </a>
+          </li>
+        </ul>
+      </div>
 
     </div>
   </header>
@@ -90,27 +135,36 @@
         <div class="carousel-item active">
           <img src="assets/img/Takumi/slide-manufacturing-4.jpg" alt="">
           <div class="carousel-container">
-            <h2>Chào mừng đến với Takumi</h2>
-            <p>Chúng tôi cung cấp dịch vụ sửa chữa, bảo trì máy móc công nghiệp và cung cấp dụng cụ cơ khí chất lượng cao như mũi khoan, mũi taro, dao phay... giúp doanh nghiệp nâng cao hiệu suất sản xuất và tiết kiệm chi phí.</p>
-            <a href="#featured-services" class="btn-get-started">Khám phá ngay</a>
+            <h2 data-i18n="welcome_heading">Chào mừng đến với Takumi</h2>
+            <p data-i18n="welcome_description">Chúng tôi cung cấp dịch vụ sửa chữa, bảo trì máy móc công nghiệp và cung
+              cấp dụng cụ cơ khí chất lượng
+              cao như mũi khoan, mũi taro, dao phay... giúp doanh nghiệp nâng cao hiệu suất sản xuất và tiết kiệm chi
+              phí.</p>
+            <a href="#featured-services" class="btn-get-started" data-i18n="welcome_button">Khám phá ngay</a>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
           <img src="assets/img/Takumi/slide-blueprint.jpg" alt="">
           <div class="carousel-container">
-            <h2>Chất lượng tạo nên uy tín</h2>
-            <p>Với đội ngũ kỹ thuật viên dày dạn kinh nghiệm, chúng tôi cam kết mang đến dịch vụ bảo trì và sửa chữa nhanh chóng, chính xác. Các sản phẩm dụng cụ cơ khí đều đạt tiêu chuẩn kỹ thuật nghiêm ngặt, đáp ứng mọi yêu cầu sản xuất.</p>
-            <a href="#featured-services" class="btn-get-started">Xem dịch vụ</a>
+            <h2 data-i18n="carousel_heading">Chất lượng tạo nên uy tín</h2>
+            <p data-i18n="carousel_description">Với đội ngũ kỹ thuật viên dày dạn kinh nghiệm, chúng tôi cam kết mang
+              đến dịch vụ bảo trì và sửa chữa
+              nhanh chóng, chính xác. Các sản phẩm dụng cụ cơ khí đều đạt tiêu chuẩn kỹ thuật nghiêm ngặt, đáp ứng mọi
+              yêu cầu sản xuất.</p>
+            <a href="#featured-services" class="btn-get-started" data-i18n="carousel_button">Xem dịch vụ</a>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
           <img src="assets/img/Takumi/slide-products.jpg" alt="">
           <div class="carousel-container">
-            <h2>Đồng hành cùng phát triển</h2>
-            <p>Từ thiết bị cơ bản đến dụng cụ chuyên dụng, chúng tôi cung cấp giải pháp tối ưu hóa quy trình gia công cơ khí. Hãy để chúng tôi đồng hành cùng bạn trong từng bước phát triển, nâng cao hiệu quả sản xuất bền vững.</p>
-            <a href="#featured-services" class="btn-get-started">Tìm hiểu thêm</a>
+            <h2 data-i18n="growth_heading">Đồng hành cùng phát triển</h2>
+            <p data-i18n="growth_description">Từ thiết bị cơ bản đến dụng cụ chuyên dụng, chúng tôi cung cấp giải pháp
+              tối ưu hóa quy trình gia công cơ
+              khí. Hãy để chúng tôi đồng hành cùng bạn trong từng bước phát triển, nâng cao hiệu quả sản xuất bền vững.
+            </p>
+            <a href="#featured-services" class="btn-get-started" data-i18n="growth_button">Tìm hiểu thêm</a>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -132,9 +186,10 @@
     <section id="about" class="about section">
 
       <!-- Section Title -->
-     <div class="container section-title" data-aos="fade-up">
-        <h2>Giới thiệu</h2>
-        <div><span>Tìm hiểu thêm</span> <span class="description-title">Về chúng tôi</span></div>
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="intro_heading">Giới thiệu</h2>
+        <div><span data-i18n="intro_sub">Tìm hiểu thêm</span> <span class="description-title" data-i18n="intro_about">Về
+            chúng tôi</span></div>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -142,21 +197,32 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p class="justify-indent">
-              Chúng tôi là đơn vị chuyên cung cấp dịch vụ bảo trì, sửa chữa máy móc cơ khí công nghiệp và phân phối các dụng cụ gia công chính xác như mũi khoan, mũi taro, dao phay, phụ tùng thay thế... đảm bảo chất lượng và hiệu quả cho quá trình sản xuất của bạn.
+            <p class="justify-indent" data-i18n="about_description">
+              Chúng tôi là đơn vị chuyên cung cấp dịch vụ bảo trì, sửa chữa máy móc cơ khí công nghiệp và phân phối các
+              dụng cụ gia công chính xác như mũi khoan, mũi taro, dao phay, phụ tùng thay thế... đảm bảo chất lượng và
+              hiệu quả cho quá trình sản xuất của bạn.
             </p>
             <ul>
-              <li><i class="bi bi-check2-circle"></i> <span>Dịch vụ sửa chữa máy móc công nghiệp nhanh chóng, chính xác, chuyên nghiệp.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Phân phối đầy đủ dụng cụ cơ khí chính hãng, phù hợp nhiều loại vật liệu.</span></li>
-              <li><i class="bi bi-check2-circle"></i> <span>Hỗ trợ kỹ thuật tận tâm, đồng hành cùng khách hàng trong sản xuất.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="about_bullet_1">Dịch vụ sửa chữa máy móc công
+                  nghiệp nhanh chóng, chính xác,
+                  chuyên nghiệp.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="about_bullet_2">Phân phối đầy đủ dụng cụ cơ khí
+                  chính hãng, phù hợp nhiều
+                  loại vật liệu.</span></li>
+              <li><i class="bi bi-check2-circle"></i> <span data-i18n="about_bullet_3">Hỗ trợ kỹ thuật tận tâm, đồng
+                  hành cùng khách hàng trong sản
+                  xuất.</span></li>
             </ul>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <p class="justify-indent">
-              Với đội ngũ kỹ thuật viên giàu kinh nghiệm và kiến thức chuyên môn, chúng tôi không chỉ cung cấp sản phẩm chất lượng mà còn mang đến giải pháp tối ưu cho từng nhu cầu gia công cơ khí. Chúng tôi cam kết đồng hành cùng sự phát triển bền vững của khách hàng.
+            <p class="justify-indent" data-i18n="experience_description">
+              Với đội ngũ kỹ thuật viên giàu kinh nghiệm và kiến thức chuyên môn, chúng tôi không chỉ cung cấp sản phẩm
+              chất lượng mà còn mang đến giải pháp tối ưu cho từng nhu cầu gia công cơ khí. Chúng tôi cam kết đồng hành
+              cùng sự phát triển bền vững của khách hàng.
             </p>
-            <a href="#" class="read-more"><span>Xem thêm</span><i class="bi bi-arrow-right"></i></a>
+            <a href="#" class="read-more"><span data-i18n="experience_readmore">Xem thêm</span><i
+                class="bi bi-arrow-right"></i></a>
           </div>
 
         </div>
@@ -175,32 +241,36 @@
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-emoji-smile"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Khách hàng hài lòng</p>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p data-i18n="happy_clients">Khách hàng hài lòng</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-journal-richtext"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Dự án</p>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p data-i18n="projects">Dự án</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-headset"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Giờ hỗ trợ</p>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p data-i18n="support_hours">Giờ hỗ trợ</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
             <i class="bi bi-people"></i>
             <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Nhân sự</p>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p data-i18n="personnel">Nhân sự</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -218,41 +288,58 @@
         <div class="row gy-4">
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <h3>Dụng cụ cơ khí</h3>
-            <p>Chúng tôi cung cấp đầy đủ các loại mũi khoan, mũi taro, dao phay... phù hợp với nhiều loại vật liệu và nhu cầu gia công khác nhau.</p>
+            <h3 data-i18n="tools_title">Dụng cụ cơ khí</h3>
+            <p data-i18n="tools_description">Chúng tôi cung cấp đầy đủ các loại mũi khoan, mũi taro, dao phay... phù hợp
+              với nhiều loại vật liệu và
+              nhu cầu gia công khác nhau.</p>
             <ul class="list-unstyled">
-              <li><i class="bi bi-check2"></i> <span>Đa dạng kích thước và chủng loại</span></li>
-              <li><i class="bi bi-check2"></i> <span>Độ bền cao, vật liệu chất lượng</span></li>
-              <li><i class="bi bi-check2"></i> <span>Phù hợp máy CNC, máy khoan tay</span></li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="tools_bullet_1">Đa dạng kích thước và chủng loại</span>
+              </li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="tools_bullet_2">Độ bền cao, vật liệu chất lượng</span>
+              </li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="tools_bullet_3">Phù hợp máy CNC, máy khoan tay</span>
+              </li>
             </ul>
           </div><!-- End feature item-->
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <h3>Dịch vụ sửa chữa máy móc</h3>
-            <p>Nhận sửa chữa, bảo trì máy móc công nghiệp với đội ngũ kỹ thuật chuyên môn cao, hỗ trợ tận nơi theo yêu cầu.</p>
+            <h3 data-i18n="repair_title">Dịch vụ sửa chữa máy móc</h3>
+            <p data-i18n="repair_description">Nhận sửa chữa, bảo trì máy móc công nghiệp với đội ngũ kỹ thuật chuyên môn
+              cao, hỗ trợ tận nơi theo yêu
+              cầu.</p>
             <ul class="list-unstyled">
-              <li><i class="bi bi-check2"></i> <span>Khắc phục lỗi nhanh chóng, chính xác</span></li>
-              <li><i class="bi bi-check2"></i> <span>Thay thế linh kiện cơ khí uy tín</span></li>
-              <li><i class="bi bi-check2"></i> <span>Hỗ trợ kỹ thuật sau dịch vụ</span></li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="repair_bullet_1">Khắc phục lỗi nhanh chóng, chính
+                  xác</span></li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="repair_bullet_2">Thay thế linh kiện cơ khí uy tín</span>
+              </li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="repair_bullet_3">Hỗ trợ kỹ thuật sau dịch vụ</span></li>
             </ul>
           </div><!-- End feature item-->
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <h3>Tư vấn & thiết kế giải pháp gia công</h3>
-            <p>Chúng tôi hỗ trợ tư vấn chọn dụng cụ phù hợp, thiết kế quy trình gia công tối ưu hóa hiệu suất và chi phí sản xuất.</p>
+            <h3 data-i18n="consult_title">Tư vấn & thiết kế giải pháp gia công</h3>
+            <p data-i18n="consult_description">Chúng tôi hỗ trợ tư vấn chọn dụng cụ phù hợp, thiết kế quy trình gia công
+              tối ưu hóa hiệu suất và chi phí
+              sản xuất.</p>
             <ul class="list-unstyled">
-              <li><i class="bi bi-check2"></i> <span>Giải pháp theo yêu cầu từng ngành</span></li>
-              <li><i class="bi bi-check2"></i> <span>Tối ưu công đoạn và chi phí</span></li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="consult_bullet_1">Giải pháp theo yêu cầu từng
+                  ngành</span></li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="consult_bullet_2">Tối ưu công đoạn và chi phí</span>
+              </li>
             </ul>
           </div><!-- End feature item-->
 
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <h3>Hỗ trợ & chăm sóc khách hàng</h3>
-            <p>Chúng tôi luôn sẵn sàng hỗ trợ trước – trong – sau khi mua hàng để đảm bảo khách hàng sử dụng hiệu quả nhất sản phẩm và dịch vụ.</p>
+            <h3 data-i18n="support_title">Hỗ trợ & chăm sóc khách hàng</h3>
+            <p data-i18n="support_description">Chúng tôi luôn sẵn sàng hỗ trợ trước – trong – sau khi mua hàng để đảm
+              bảo khách hàng sử dụng hiệu quả
+              nhất sản phẩm và dịch vụ.</p>
             <ul class="list-unstyled">
-              <li><i class="bi bi-check2"></i> <span>Tư vấn tận tình 24/7</span></li>
-              <li><i class="bi bi-check2"></i> <span>Đổi trả linh hoạt với sản phẩm lỗi</span></li>
-              <li><i class="bi bi-check2"></i> <span>Đồng hành cùng khách hàng lâu dài</span></li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="support_bullet_1">Tư vấn tận tình 24/7</span></li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="support_bullet_2">Đổi trả linh hoạt với sản phẩm
+                  lỗi</span></li>
+              <li><i class="bi bi-check2"></i> <span data-i18n="support_bullet_3">Đồng hành cùng khách hàng lâu
+                  dài</span></li>
             </ul>
           </div><!-- End feature item-->
 
@@ -268,8 +355,9 @@
 
       <!-- Tiêu đề Phần -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Dịch Vụ</h2>
-        <div><span>Khám Phá</span> <span class="description-title">Dịch Vụ Của Chúng Tôi</span></div>
+        <h2 data-i18n="services_heading">Dịch Vụ</h2>
+        <div><span data-i18n="services_discover">Khám Phá</span> <span class="description-title"
+            data-i18n="services_subheading">Dịch Vụ Của Chúng Tôi</span></div>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -282,9 +370,11 @@
                 <i class="bi bi-gear"></i>
               </div>
               <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Bảo trì & sửa chữa máy móc</h3>
+              <h3 data-i18n="service_maintenance_title">Bảo trì & sửa chữa máy móc</h3>
               </a>
-              <p>Chúng tôi cung cấp dịch vụ sửa chữa, bảo trì máy móc công nghiệp, máy cơ khí chuyên dụng với kỹ thuật viên nhiều năm kinh nghiệm.</p>
+              <p data-i18n="service_maintenance_description">Chúng tôi cung cấp dịch vụ sửa chữa, bảo trì máy móc công
+                nghiệp, máy cơ khí chuyên dụng với kỹ thuật
+                viên nhiều năm kinh nghiệm.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -294,9 +384,11 @@
                 <i class="bi bi-tools"></i>
               </div>
               <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Cung cấp dụng cụ cơ khí</h3>
+              <h3 data-i18n="service_tools_title">Cung cấp dụng cụ cơ khí</h3>
               </a>
-              <p>Phân phối mũi khoan, mũi taro, dao phay, đá mài, thước đo và các dụng cụ phục vụ gia công cơ khí chính xác, đầy đủ chủng loại.</p>
+              <p data-i18n="service_tools_description">Phân phối mũi khoan, mũi taro, dao phay, đá mài, thước đo và các
+                dụng cụ phục vụ gia công cơ khí chính
+                xác, đầy đủ chủng loại.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -306,9 +398,11 @@
                 <i class="bi bi-lightbulb"></i>
               </div>
               <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Tư vấn giải pháp gia công</h3>
+              <h3 data-i18n="service_consulting_title">Tư vấn giải pháp gia công</h3>
               </a>
-              <p>Tư vấn chọn dụng cụ và quy trình gia công phù hợp với từng loại vật liệu, giúp tối ưu chi phí và nâng cao hiệu quả sản xuất.</p>
+              <p data-i18n="service_consulting_description">Tư vấn chọn dụng cụ và quy trình gia công phù hợp với từng
+                loại vật liệu, giúp tối ưu chi phí và nâng
+                cao hiệu quả sản xuất.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -318,9 +412,11 @@
                 <i class="bi bi-box-seam"></i>
               </div>
               <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Thiết kế và gia công theo yêu cầu</h3>
+              <h3 data-i18n="service_custom_title">Thiết kế và gia công theo yêu cầu</h3>
               </a>
-              <p>Nhận thiết kế, gia công chi tiết cơ khí, phụ tùng máy theo bản vẽ hoặc mẫu, đảm bảo độ chính xác và chất lượng kỹ thuật.</p>
+              <p data-i18n="service_custom_description">Nhận thiết kế, gia công chi tiết cơ khí, phụ tùng máy theo bản
+                vẽ hoặc mẫu, đảm bảo độ chính xác và
+                chất lượng kỹ thuật.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -330,9 +426,11 @@
                 <i class="bi bi-truck"></i>
               </div>
               <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Giao hàng toàn quốc</h3>
+              <h3 data-i18n="service_delivery_title">Giao hàng toàn quốc</h3>
               </a>
-              <p>Cam kết giao hàng nhanh chóng trên toàn quốc, đóng gói cẩn thận và hỗ trợ đổi trả nếu sản phẩm không đúng mô tả.</p>
+              <p data-i18n="service_delivery_description">Cam kết giao hàng nhanh chóng trên toàn quốc, đóng gói cẩn
+                thận và hỗ trợ đổi trả nếu sản phẩm không
+                đúng mô tả.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -342,9 +440,11 @@
                 <i class="bi bi-headset"></i>
               </div>
               <!-- <a href="service-details.html" class="stretched-link"> -->
-                <h3>Hỗ trợ kỹ thuật & chăm sóc khách hàng</h3>
+              <h3 data-i18n="service_support_title">Hỗ trợ kỹ thuật & chăm sóc khách hàng</h3>
               </a>
-              <p>Đội ngũ kỹ thuật sẵn sàng hỗ trợ tư vấn sử dụng, xử lý sự cố sản phẩm và đồng hành cùng khách hàng sau bán hàng.</p>
+              <p data-i18n="service_support_description">Đội ngũ kỹ thuật sẵn sàng hỗ trợ tư vấn sử dụng, xử lý sự cố
+                sản phẩm và đồng hành cùng khách hàng sau
+                bán hàng.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -355,12 +455,13 @@
     </section><!-- /Services Section -->
 
     <!-- Testimonials Section -->
-   <section id="testimonials" class="testimonials section light-background">
+    <section id="testimonials" class="testimonials section light-background">
 
       <!-- Tiêu đề Phần -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Khách Hàng Nói Gì</h2>
-        <div><span>Ý Kiến</span> <span class="description-title">Khách Hàng</span></div>
+        <h2 data-i18n="testimonial_heading">Khách Hàng Nói Gì</h2>
+        <div><span data-i18n="testimonial_opinion">Ý Kiến</span> <span class="description-title"
+            data-i18n="testimonial_subheading">Khách Hàng</span></div>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -397,14 +498,17 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Nguyễn Văn Hùng</h3>
-                  <h4>Chủ xưởng cơ khí tại Bình Dương</h4>
+                  <h3 data-i18n="testimonial_1_name">Nguyễn Văn Hùng</h3>
+                  <h4 data-i18n="testimonial_1_role">Chủ xưởng cơ khí tại Bình Dương</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Tôi đã sử dụng dịch vụ sửa chữa máy CNC tại đây – rất chuyên nghiệp, kỹ thuật giỏi và xử lý nhanh. Xưởng tôi hoạt động lại chỉ sau một ngày.</span>
+                    <span data-i18n="testimonial_1_text">Tôi đã sử dụng dịch vụ sửa chữa máy CNC tại đây – rất chuyên
+                      nghiệp, kỹ thuật giỏi và xử lý
+                      nhanh. Xưởng tôi hoạt động lại chỉ sau một ngày.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -415,14 +519,17 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Trần Thị Lan</h3>
-                  <h4>Quản lý mua hàng – công ty cơ khí chính xác</h4>
+                  <h3 data-i18n="testimonial_2_name">Trần Thị Lan</h3>
+                  <h4 data-i18n="testimonial_2_role">Quản lý mua hàng – công ty cơ khí chính xác</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Công ty cung cấp dụng cụ cắt gọt rất chất lượng – dao phay, mũi khoan nhập khẩu dùng lâu mòn, giao hàng nhanh, báo giá rõ ràng.</span>
+                    <span data-i18n="testimonial_2_text">Công ty cung cấp dụng cụ cắt gọt rất chất lượng – dao phay, mũi
+                      khoan nhập khẩu dùng lâu mòn,
+                      giao hàng nhanh, báo giá rõ ràng.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -433,14 +540,17 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Lê Minh Nhật</h3>
-                  <h4>Chủ tiệm tiện – Hóc Môn</h4>
+                  <h3 data-i18n="testimonial_3_name">Lê Minh Nhật</h3>
+                  <h4 data-i18n="testimonial_3_role">Chủ tiệm tiện – Hóc Môn</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Đặt hàng online các dụng cụ như thước đo, mũi taro rất tiện, giá tốt, hỗ trợ kỹ thuật nhiệt tình. Tôi sẽ tiếp tục ủng hộ lâu dài.</span>
+                    <span data-i18n="testimonial_3_text">Đặt hàng online các dụng cụ như thước đo, mũi taro rất tiện,
+                      giá tốt, hỗ trợ kỹ thuật nhiệt
+                      tình. Tôi sẽ tiếp tục ủng hộ lâu dài.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -451,14 +561,17 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Phạm Quốc Dũng</h3>
-                  <h4>Kỹ sư bảo trì – Khu công nghiệp VSIP</h4>
+                  <h3 data-i18n="testimonial_4_name">Phạm Quốc Dũng</h3>
+                  <h4 data-i18n="testimonial_4_role">Kỹ sư bảo trì – Khu công nghiệp VSIP</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Tôi đánh giá cao đội ngũ kỹ thuật – xử lý các sự cố máy nhanh, đặc biệt là máy tiện cơ đời cũ. Dịch vụ tận tâm, đáng tin cậy.</span>
+                    <span data-i18n="testimonial_4_text">Tôi đánh giá cao đội ngũ kỹ thuật – xử lý các sự cố máy nhanh,
+                      đặc biệt là máy tiện cơ đời cũ.
+                      Dịch vụ tận tâm, đáng tin cậy.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -469,14 +582,17 @@
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
                   <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>Đặng Thị Hoa</h3>
-                  <h4>Cửa hàng bán dụng cụ kỹ thuật</h4>
+                  <h3 data-i18n="testimonial_5_name">Đặng Thị Hoa</h3>
+                  <h4 data-i18n="testimonial_5_role">Cửa hàng bán dụng cụ kỹ thuật</h4>
                   <div class="stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Tôi lấy sỉ dụng cụ cơ khí tại đây hơn 2 năm, hàng ổn định, chính hãng, đội ngũ tư vấn rất hiểu ngành nên dễ làm việc.</span>
+                    <span data-i18n="testimonial_5_text">Tôi lấy sỉ dụng cụ cơ khí tại đây hơn 2 năm, hàng ổn định,
+                      chính hãng, đội ngũ tư vấn rất hiểu
+                      ngành nên dễ làm việc.</span>
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -501,12 +617,13 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Liên hệ ngay để được tư vấn!</h3>
-              <p>
-                Bạn đang gặp sự cố với máy móc cơ khí? Cần tìm nguồn dụng cụ cắt gọt chính hãng, giá tốt?  
-                Đừng để việc dừng máy làm gián đoạn sản xuất. Chúng tôi sẵn sàng hỗ trợ kỹ thuật, tư vấn giải pháp và cung cấp thiết bị phù hợp với nhu cầu của bạn.
+              <h3 data-i18n="cta_heading">Liên hệ ngay để được tư vấn!</h3>
+              <p data-i18n="cta_description">
+                Bạn đang gặp sự cố với máy móc cơ khí? Cần tìm nguồn dụng cụ cắt gọt chính hãng, giá tốt?
+                Đừng để việc dừng máy làm gián đoạn sản xuất. Chúng tôi sẵn sàng hỗ trợ kỹ thuật, tư vấn giải pháp và
+                cung cấp thiết bị phù hợp với nhu cầu của bạn.
               </p>
-              <a class="cta-btn" href="#contact">Liên hệ ngay</a>
+              <a class="cta-btn" href="#contact" data-i18n="cta_button">Liên hệ ngay</a>
             </div>
           </div>
         </div>
@@ -520,8 +637,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Sản phẩm</h2>
-        <div><span>Tham khảo</span> <span class="description-title">một số sản phẩm cơ khí</span></div>
+        <h2 data-i18n="product_section_title">Sản phẩm</h2>
+        <div><span data-i18n="product_section_subtitle_1">Tham khảo</span> <span class="description-title"
+            data-i18n="product_section_subtitle_2">một số sản phẩm cơ khí</span></div>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -529,131 +647,165 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter="*" class="filter-active" data-i18n="filter_all">All</li>
+            <li data-filter=".filter-app" data-i18n="filter_app">App</li>
+            <li data-filter=".filter-product" data-i18n="filter_product">Product</li>
+            <li data-filter=".filter-branding" data-i18n="filter_branding">Branding</li>
+            <li data-filter=".filter-books" data-i18n="filter_books">Books</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/1.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/1.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_1_title">Mũi khoan HSS
+                      5mm</a></h4>
+                  <p data-i18n="product_1_description">Thép gió HSS, phù hợp khoan thép mềm và nhôm, độ cứng cao, chống
+                    mài mòn.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/2.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/2.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_2_title">Mũi khoan bê tông
+                      SDS-Plus</a></h4>
+                  <p data-i18n="product_2_desc">Dành cho khoan tường, đá, xi măng. Đầu hợp kim siêu cứng, chuẩn
+                    SDS-Plus.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/3.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/3.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_3_title">Mũi khoan xoắn
+                      8mm</a></h4>
+                  <p data-i18n="product_3_desc">Thiết kế xoắn tăng hiệu quả thoát phoi, sử dụng tốt trên thép và gỗ
+                    cứng.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/4.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/4.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_4_title">Mũi khoan inox phủ
+                      titanium</a></h4>
+                  <p data-i18n="product_4_desc">Chuyên dụng khoan inox, phủ titanium tăng tuổi thọ và giảm ma sát khi
+                    khoan.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/5.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/5.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/5.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/5.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_5_title">Bộ mũi khoan đa năng
+                      13 chi tiết</a></h4>
+                  <p data-i18n="product_5_desc">Bao gồm nhiều kích cỡ từ 1mm đến 10mm, dùng cho gỗ, kim loại, nhựa.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/6.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/6.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/6.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/6.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_6_title">Mũi khoan tháp (Step
+                      Drill)</a></h4>
+                  <p data-i18n="product_6_desc">Khoan nhiều kích thước trên kim loại mỏng. Tiện lợi khi thi công điện,
+                    tủ điều khiển.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/7.png" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/7.png" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/7.png" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/7.png" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_7_title">Mũi khoan gỗ 3
+                      cạnh</a></h4>
+                  <p data-i18n="product_7_desc">Thiết kế lưỡi cắt chính xác, khoan gỗ nhanh và sạch, không bị xé gỗ.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/8.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/8.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/8.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/8.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_8_title">Mũi khoan từ TCT
+                      22mm</a></h4>
+                  <p data-i18n="product_8_desc">Sử dụng cho máy khoan từ, cắt nhanh, bền bỉ với thép dày, kết cấu chịu
+                    lực.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/9.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/9.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/9.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/9.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_9_title">Đầu nối mũi khoan
+                      lục giác</a></h4>
+                  <p data-i18n="product_9_desc">Giúp chuyển đổi nhanh chóng mũi khoan, phù hợp với máy vặn vít điện tử.
+                  </p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/10.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/10.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/10.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/10.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_10_title">Mũi khoan HSS-Co
+                      6.5mm</a></h4>
+                  <p data-i18n="product_10_desc">Hợp kim cobalt chuyên dùng khoan thép không gỉ, độ cứng và độ bền vượt
+                    trội.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/11.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/11.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/11.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/11.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_11_title">Máy mài mũi khoan
+                      mini</a></h4>
+                  <p data-i18n="product_11_desc">Giúp tái sử dụng mũi khoan cũ bằng cách mài lại đầu cắt, dễ dùng và
+                    hiệu quả cao.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <a href="assets/img/Takumi/12.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/Takumi/12.jpg" class="img-fluid" alt=""></a>
+                <a href="assets/img/Takumi/12.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/Takumi/12.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="portfolio-details.html" title="Chi tiết" data-i18n="product_12_title">Hộp đựng mũi khoan
+                      25 ngăn</a></h4>
+                  <p data-i18n="product_12_desc">Thiết kế chắc chắn, chống va đập, giúp sắp xếp và bảo quản mũi khoan
+                    tiện lợi.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -671,8 +823,9 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Nhân sự</h2>
-        <div><span>Các nhân sự</span> <span class="description-title">của chúng tôi</span></div>
+        <h2 data-i18n="team_section_title">Nhân sự</h2>
+        <div><span data-i18n="team_section_subtitle">Các nhân sự</span> <span class="description-title"
+            data-i18n="team_section_description">của chúng tôi</span></div>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -684,8 +837,8 @@
               <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
+                  <h4 data-i18n="team_walter_name">Walter White</h4>
+                  <span data-i18n="team_walter_role">Chief Executive Officer</span>
                 </div>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -702,8 +855,8 @@
               <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
+                  <h4 data-i18n="team_sarah_name">Sarah Jhonson</h4>
+                  <span data-i18n="team_sarah_role">Product Manager</span>
                 </div>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -720,8 +873,8 @@
               <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
+                  <h4 data-i18n="team_william_name">William Anderson</h4>
+                  <span data-i18n="team_william_role">CTO</span>
                 </div>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -738,8 +891,8 @@
               <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
+                  <h4 data-i18n="team_amanda_name">Amanda Jepson</h4>
+                  <span data-i18n="team_amanda_role">Accountant</span>
                 </div>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -761,8 +914,8 @@
 
       <!-- Tiêu đề -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Câu Hỏi Thường Gặp</h2>
-        <div><span class="description-title">Giải đáp thắc mắc của khách hàng</span></div>
+        <h2 data-i18n="faq_title">Câu Hỏi Thường Gặp</h2>
+        <div><span class="description-title" data-i18n="faq_subtitle">Giải đáp thắc mắc của khách hàng</span></div>
       </div><!-- Kết thúc tiêu đề -->
 
       <div class="container">
@@ -770,11 +923,12 @@
         <div class="row faq-item" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5 d-flex">
             <i class="bi bi-question-circle"></i>
-            <h4>Công ty có nhận thiết kế và chế tạo theo yêu cầu không?</h4>
+            <h4 data-i18n="faq_q1">Công ty có nhận thiết kế và chế tạo theo yêu cầu không?</h4>
           </div>
           <div class="col-lg-7">
-            <p>
-              Có. Chúng tôi chuyên nhận thiết kế – gia công cơ khí chính xác theo yêu cầu kỹ thuật, bản vẽ hoặc mẫu thực tế từ khách hàng. Đảm bảo đúng tiến độ và chất lượng.
+            <p data-i18n="faq_a1">
+              Có. Chúng tôi chuyên nhận thiết kế – gia công cơ khí chính xác theo yêu cầu kỹ thuật, bản vẽ hoặc mẫu thực
+              tế từ khách hàng. Đảm bảo đúng tiến độ và chất lượng.
             </p>
           </div>
         </div><!-- Kết thúc mục FAQ -->
@@ -782,11 +936,12 @@
         <div class="row faq-item" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5 d-flex">
             <i class="bi bi-question-circle"></i>
-            <h4>Các sản phẩm có được bảo hành không?</h4>
+            <h4 data-i18n="faq_q2">Các sản phẩm có được bảo hành không?</h4>
           </div>
           <div class="col-lg-7">
-            <p>
-              Tất cả sản phẩm, thiết bị do chúng tôi gia công hoặc lắp đặt đều được bảo hành từ 6–12 tháng tùy hạng mục. Hỗ trợ kỹ thuật 24/7 trong suốt thời gian sử dụng.
+            <p data-i18n="faq_a2">
+              Tất cả sản phẩm, thiết bị do chúng tôi gia công hoặc lắp đặt đều được bảo hành từ 6–12 tháng tùy hạng mục.
+              Hỗ trợ kỹ thuật 24/7 trong suốt thời gian sử dụng.
             </p>
           </div>
         </div><!-- Kết thúc mục FAQ -->
@@ -794,11 +949,12 @@
         <div class="row faq-item" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-5 d-flex">
             <i class="bi bi-question-circle"></i>
-            <h4>Có cung cấp dịch vụ sửa chữa, bảo trì máy móc công nghiệp không?</h4>
+            <h4 data-i18n="faq_q3">Có cung cấp dịch vụ sửa chữa, bảo trì máy móc công nghiệp không?</h4>
           </div>
           <div class="col-lg-7">
-            <p>
-              Có. Chúng tôi nhận sửa chữa – bảo trì máy móc công nghiệp, thiết bị truyền động, hệ thống khí nén – thuỷ lực, dây chuyền sản xuất,... tại nhà xưởng của khách hàng hoặc tại xưởng chúng tôi.
+            <p data-i18n="faq_a3">
+              Có. Chúng tôi nhận sửa chữa – bảo trì máy móc công nghiệp, thiết bị truyền động, hệ thống khí nén – thuỷ
+              lực, dây chuyền sản xuất,... tại nhà xưởng của khách hàng hoặc tại xưởng chúng tôi.
             </p>
           </div>
         </div><!-- Kết thúc mục FAQ -->
@@ -806,11 +962,12 @@
         <div class="row faq-item" data-aos="fade-up" data-aos-delay="400">
           <div class="col-lg-5 d-flex">
             <i class="bi bi-question-circle"></i>
-            <h4>Thời gian hoàn thành một đơn hàng thông thường là bao lâu?</h4>
+            <h4 data-i18n="faq_q4">Thời gian hoàn thành một đơn hàng thông thường là bao lâu?</h4>
           </div>
           <div class="col-lg-7">
-            <p>
-              Thời gian hoàn thiện tùy thuộc vào độ phức tạp và số lượng. Với các sản phẩm cơ khí phổ thông, thời gian trung bình từ 3–7 ngày. Đối với sản phẩm đặt riêng, có thể từ 10–15 ngày.
+            <p data-i18n="faq_a4">
+              Thời gian hoàn thiện tùy thuộc vào độ phức tạp và số lượng. Với các sản phẩm cơ khí phổ thông, thời gian
+              trung bình từ 3–7 ngày. Đối với sản phẩm đặt riêng, có thể từ 10–15 ngày.
             </p>
           </div>
         </div><!-- Kết thúc mục FAQ -->
@@ -818,11 +975,12 @@
         <div class="row faq-item" data-aos="fade-up" data-aos-delay="500">
           <div class="col-lg-5 d-flex">
             <i class="bi bi-question-circle"></i>
-            <h4>Bên công ty có hỗ trợ tư vấn kỹ thuật và khảo sát tại chỗ không?</h4>
+            <h4 data-i18n="faq_q5">Bên công ty có hỗ trợ tư vấn kỹ thuật và khảo sát tại chỗ không?</h4>
           </div>
           <div class="col-lg-7">
-            <p>
-              Có. Đội ngũ kỹ thuật của chúng tôi có thể đến khảo sát trực tiếp tại nhà xưởng để đánh giá, đo đạc và tư vấn giải pháp phù hợp nhất cho nhu cầu của khách hàng.
+            <p data-i18n="faq_a5">
+              Có. Đội ngũ kỹ thuật của chúng tôi có thể đến khảo sát trực tiếp tại nhà xưởng để đánh giá, đo đạc và tư
+              vấn giải pháp phù hợp nhất cho nhu cầu của khách hàng.
             </p>
           </div>
         </div><!-- Kết thúc mục FAQ -->
@@ -832,13 +990,14 @@
     </section><!-- Kết thúc phần Câu hỏi thường gặp -->
 
 
-        <!-- Liên hệ -->
+    <!-- Liên hệ -->
     <section id="contact" class="contact section light-background">
 
       <!-- Tiêu đề -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Liên Hệ</h2>
-        <div><span>Cần hỗ trợ?</span> <span class="description-title">Liên hệ với chúng tôi</span></div>
+        <h2 data-i18n="contact_title">Liên Hệ</h2>
+        <div><span data-i18n="contact_subtitle1">Cần hỗ trợ?</span> <span class="description-title"
+            data-i18n="contact_subtitle2">Liên hệ với chúng tôi</span></div>
       </div><!-- Kết thúc tiêu đề -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -848,26 +1007,30 @@
             <div class="row gy-4">
 
               <div class="col-lg-12">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                  data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Địa chỉ</h3>
-                  <p>Số A, Đường B, Phường C, Quận D ,TP E </p> <!-- Cập nhật theo địa chỉ thực tế -->
+                  <h3 data-i18n="contact_address_title">Địa chỉ</h3>
+                  <p data-i18n="contact_address_value">Số A, Đường B, Phường C, Quận D ,TP E </p>
+                  <!-- Cập nhật theo địa chỉ thực tế -->
                 </div>
               </div>
 
               <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                  data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Điện thoại</h3>
-                  <p>+84 123 456 789</p> <!-- Thay bằng số thực tế -->
+                  <h3 data-i18n="contact_phone_title">Điện thoại</h3>
+                  <p data-i18n="contact_phone_value">+84 123 456 789</p> <!-- Thay bằng số thực tế -->
                 </div>
               </div>
 
               <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                  data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
-                  <p>lienhe@tencongty.com</p> <!-- Thay bằng email thật -->
+                  <h3 data-i18n="contact_email_title">Email</h3>
+                  <p data-i18n="contact_email_value">lienhe@tencongty.com</p> <!-- Thay bằng email thật -->
                 </div>
               </div>
 
@@ -875,31 +1038,32 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Họ và tên của bạn" required>
+                  <input type="text" name="name" class="form-control" data-i18n-placeholder="contact_input_name"
+                    required>
                 </div>
-
                 <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Email liên hệ" required>
+                  <input type="email" name="email" class="form-control" data-i18n-placeholder="contact_input_email"
+                    required>
                 </div>
-
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Tiêu đề liên hệ" required>
+                  <input type="text" name="subject" class="form-control" data-i18n-placeholder="contact_input_subject"
+                    required>
                 </div>
-
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Nội dung tin nhắn..." required></textarea>
+                  <textarea name="message" class="form-control" rows="4" data-i18n-placeholder="contact_input_message"
+                    required></textarea>
                 </div>
-
                 <div class="col-md-12 text-center">
-                  <div class="loading">Đang gửi...</div>
+                  <div class="loading" data-i18n="contact_loading">Đang gửi...</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Tin nhắn của bạn đã được gửi. Cảm ơn bạn!</div>
+                  <div class="sent-message" data-i18n="contact_success">Tin nhắn của bạn đã được gửi. Cảm ơn bạn!</div>
 
-                  <button type="submit">Gửi liên hệ</button>
+                  <button type="submit" data-i18n="contact_button">Gửi liên hệ</button>
                 </div>
 
               </div>
@@ -921,14 +1085,21 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Takumi</span>
+            <span class="sitename">TAKUMI</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Số 108, Đường Adam</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Điện thoại:</strong> <span>+84 123 456 789</span></p>
-            <p><strong>Email:</strong> <span>lienhe@takumi.vn</span></p>
+            <p data-i18n="footer_address_line1">Số 108, Đường Adam</p>
+            <p data-i18n="footer_address_line2">New York, NY 535022</p>
+            <p class="mt-3">
+              <strong data-i18n="footer_phone_label">Điện thoại:</strong>
+              <span>+84 123 456 789</span>
+            </p>
+            <p>
+              <strong data-i18n="footer_email_label">Email:</strong>
+              <span>lienhe@takumi.vn</span>
+            </p>
           </div>
+
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -938,55 +1109,59 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Liên kết nhanh</h4>
+          <h4 data-i18n="footer_quick_links">Liên kết nhanh</h4>
           <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Giới thiệu</a></li>
-            <li><a href="#">Dịch vụ</a></li>
-            <li><a href="#">Điều khoản</a></li>
-            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#" data-i18n="footer_link_home">Trang chủ</a></li>
+            <li><a href="#" data-i18n="footer_link_about">Giới thiệu</a></li>
+            <li><a href="#" data-i18n="footer_link_services">Dịch vụ</a></li>
+            <li><a href="#" data-i18n="footer_link_terms">Điều khoản</a></li>
+            <li><a href="#" data-i18n="footer_link_privacy">Chính sách bảo mật</a></li>
           </ul>
         </div>
-
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Dịch vụ của chúng tôi</h4>
+          <h4 data-i18n="footer_services_title">Dịch vụ của chúng tôi</h4>
           <ul>
-            <li><a href="#">Gia công cơ khí chính xác</a></li>
-            <li><a href="#">Thiết kế & Chế tạo máy</a></li>
-            <li><a href="#">Lắp đặt hệ thống sản xuất</a></li>
-            <li><a href="#">Bảo trì & Sửa chữa máy móc</a></li>
-            <li><a href="#">Tư vấn giải pháp tự động hóa</a></li>
+            <li><a href="#" data-i18n="footer_service_precision">Gia công cơ khí chính xác</a></li>
+            <li><a href="#" data-i18n="footer_service_design">Thiết kế & Chế tạo máy</a></li>
+            <li><a href="#" data-i18n="footer_service_installation">Lắp đặt hệ thống sản xuất</a></li>
+            <li><a href="#" data-i18n="footer_service_maintenance">Bảo trì & Sửa chữa máy móc</a></li>
+            <li><a href="#" data-i18n="footer_service_consulting">Tư vấn giải pháp tự động hóa</a></li>
           </ul>
         </div>
-
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Đăng ký nhận tin</h4>
-          <p>Hãy để lại email để nhận thông tin mới nhất về sản phẩm và dịch vụ của chúng tôi!</p>
+          <h4 data-i18n="newsletter_title">Đăng ký nhận tin</h4>
+          <p data-i18n="newsletter_description">
+            Hãy để lại email để nhận thông tin mới nhất về sản phẩm và dịch vụ của chúng tôi!
+          </p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form">
-              <input type="email" name="email" placeholder="Nhập email của bạn" required>
-              <input type="submit" value="Đăng ký">
+              <input type="email" name="email" data-i18n-placeholder="newsletter_input" required>
+              <input type="submit" value="Đăng ký" data-i18n-value="newsletter_submit">
             </div>
-            <div class="loading">Đang gửi...</div>
+            <div class="loading" data-i18n="newsletter_loading">Đang gửi...</div>
             <div class="error-message"></div>
-            <div class="sent-message">Bạn đã đăng ký thành công. Cảm ơn bạn!</div>
+            <div class="sent-message" data-i18n="newsletter_success">Bạn đã đăng ký thành công. Cảm ơn bạn!</div>
           </form>
         </div>
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Bản quyền</span> <strong class="px-1 sitename">Takumi</strong> <span>Đã đăng ký mọi quyền.</span></p>
-      <div class="credits">
-        Thiết kế bởi <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <p>
+        © <span data-i18n="footer_copyright_prefix">Bản quyền</span>
+        <strong class="px-1 sitename">Takumi</strong>
+        <span data-i18n="footer_copyright_suffix">Đã đăng ký mọi quyền.</span>
+      </p>
+      <div class="credits" data-i18n="footer_credit">
+        Thiết kế bởi <a href="https://bootstrapmade.com/">Nhat Hao</a>
       </div>
     </div>
-
   </footer>
 
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader">
@@ -1008,7 +1183,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/i18n.js"></script>
 </body>
 
 </html>

@@ -234,7 +234,19 @@ h6 {
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
-
+.dropdown-menu {
+  background-color: var(--background-color) !important;
+  border: none; /* tùy chọn: bỏ viền nếu muốn */
+}
+.dropdown-menu .dropdown-item {
+  background-color: transparent;
+  color: var(--default-color);
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #3a393d; /* Màu khi hover - đậm hơn chút để rõ */
+  color: var(--accent-color); /* Ví dụ đổi màu chữ khi hover */
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
