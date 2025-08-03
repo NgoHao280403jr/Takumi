@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -43,41 +45,65 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Multi</h1>
+        <img src="assets/img/Takumi/z6687056133619_f776ab656707e1157c394817251b4d72-removebg-preview.png" alt="">
+        <!-- <h1 class="sitename">TAKUMI</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="index.html" class="active" data-i18n="home">Trang chủ</a></li>
+          <li><a href="index.html#about" data-i18n="about">Về chúng tôi </a></li>
+          <li><a href="index.html#services" data-i18n="services">Dịch vụ</a></li>
+          <li><a href="index.html#portfolio" data-i18n="portfolio">Sản phẩm</a></li>
+          <li><a href="index.html#team" data-i18n="team">Đội nhóm</a></li>
+          <li><a href="index.html#contact" data-i18n="contact">Liên hệ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="#about">Get Started</a>
-
+      <!-- Language switcher with emoji flags -->
+      <!-- Bootstrap dropdown chọn ngôn ngữ -->
+      <div class="dropdown ms-3">
+        <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button"
+          id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+            <rect width="20" height="15" fill="#DA020E" />
+            <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+          </svg>
+          Tiếng Việt
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="vi">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="#DA020E" />
+                <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+              </svg>
+              Tiếng Việt
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="en">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="#012169" />
+                <path d="M0,0 L20,15 M20,0 L0,15" stroke="white" stroke-width="2" />
+                <path d="M0,0 L20,15 M20,0 L0,15" stroke="#C8102E" stroke-width="1" />
+                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="white" stroke-width="3" />
+                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="#C8102E" stroke-width="2" />
+              </svg>
+              English
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="ja">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="white" />
+                <circle cx="10" cy="7.5" r="4" fill="#BC002D" />
+              </svg>
+              日本語
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -89,8 +115,11 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Portfolio Details</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h1 data-i18n="product.title">Mũi khoan HSS 5mm</h1>
+              <p class="mb-0" data-i18n="product.description">
+                Sản phẩm mũi khoan thép gió (HSS) 5mm chất lượng cao, phù hợp khoan vật liệu kim loại nhẹ như nhôm, đồng
+                và thép mềm.
+              </p>
             </div>
           </div>
         </div>
@@ -98,57 +127,46 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li><a href="index.html" data-i18n="common.home">Trang chủ</a></li>
+            <li class="current" data-i18n="product.details">Chi tiết sản phẩm</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
-
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
-
               <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
                 }
-              </script>
+              }
+            </script>
 
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/app-1.jpg" alt="">
+                  <img src="assets/img/Takumi/1.jpg" alt="HSS Drill Bit 5mm - Image 1">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/product-1.jpg" alt="">
+                  <img src="assets/img/Takumi/1.jpg" alt="HSS Drill Bit 5mm - Image 2">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
+                  <img src="assets/img/Takumi/1.jpg" alt="HSS Drill Bit 5mm - Image 3">
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/books-1.jpg" alt="">
-                </div>
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -156,29 +174,38 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
+              <h3 data-i18n="product.infoTitle">Thông tin sản phẩm</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong data-i18n="product.categoryLabel">Danh mục</strong>: <span data-i18n="product.category">Mũi
+                    khoan thép gió</span></li>
+                <li><strong data-i18n="product.brandLabel">Thương hiệu</strong>: Takumi Tools</li>
+                <li><strong data-i18n="product.updatedLabel">Ngày cập nhật</strong>: 10/07/2025</li>
+                <li><strong data-i18n="product.websiteLabel">Website</strong>: <a href="#">www.dungcucokhi.vn</a></li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              <h2 data-i18n="product.featuresTitle">Đặc điểm nổi bật</h2>
+              <p data-i18n="product.featuresDesc">
+                Mũi khoan HSS 5mm là lựa chọn lý tưởng cho thợ cơ khí và DIYer chuyên khoan kim loại. Được chế tạo từ
+                vật liệu thép gió cao cấp, mũi khoan có độ bền và khả năng chịu nhiệt cao, giúp kéo dài tuổi thọ khi sử
+                dụng trên máy khoan cầm tay hoặc bàn.
               </p>
+              <ul>
+                <li data-i18n="product.feature1">✅ Đường kính: 5mm</li>
+                <li data-i18n="product.feature2">✅ Chất liệu: HSS (High Speed Steel)</li>
+                <li data-i18n="product.feature3">✅ Ứng dụng: Khoan thép mềm, nhôm, nhựa kỹ thuật</li>
+                <li data-i18n="product.feature4">✅ Kiểu chuôi: Tròn</li>
+                <li data-i18n="product.feature5">✅ Đóng gói: Vỉ 10 chiếc hoặc hộp 100 chiếc</li>
+              </ul>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /Portfolio Details Section -->
 
   </main>
+
+
 
   <footer id="footer" class="footer dark-background">
 
@@ -186,14 +213,21 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Multi</span>
+            <span class="sitename">TAKUMI</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p data-i18n="footer_address_line1">Số 108, Đường Adam</p>
+            <p data-i18n="footer_address_line2">New York, NY 535022</p>
+            <p class="mt-3">
+              <strong data-i18n="footer_phone_label">Điện thoại:</strong>
+              <span>+84 123 456 789</span>
+            </p>
+            <p>
+              <strong data-i18n="footer_email_label">Email:</strong>
+              <span>lienhe@takumi.vn</span>
+            </p>
           </div>
+
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -203,56 +237,58 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="footer_quick_links">Liên kết nhanh</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#" data-i18n="footer_link_home">Trang chủ</a></li>
+            <li><a href="#" data-i18n="footer_link_about">Giới thiệu</a></li>
+            <li><a href="#" data-i18n="footer_link_services">Dịch vụ</a></li>
+            <li><a href="#" data-i18n="footer_link_terms">Điều khoản</a></li>
+            <li><a href="#" data-i18n="footer_link_privacy">Chính sách bảo mật</a></li>
           </ul>
         </div>
-
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="footer_services_title">Dịch vụ của chúng tôi</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#" data-i18n="footer_service_precision">Gia công cơ khí chính xác</a></li>
+            <li><a href="#" data-i18n="footer_service_design">Thiết kế & Chế tạo máy</a></li>
+            <li><a href="#" data-i18n="footer_service_installation">Lắp đặt hệ thống sản xuất</a></li>
+            <li><a href="#" data-i18n="footer_service_maintenance">Bảo trì & Sửa chữa máy móc</a></li>
+            <li><a href="#" data-i18n="footer_service_consulting">Tư vấn giải pháp tự động hóa</a></li>
           </ul>
         </div>
-
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <h4 data-i18n="newsletter_title">Đăng ký nhận tin</h4>
+          <p data-i18n="newsletter_description">
+            Hãy để lại email để nhận thông tin mới nhất về sản phẩm và dịch vụ của chúng tôi!
+          </p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
+            <div class="newsletter-form">
+              <input type="email" name="email" data-i18n-placeholder="newsletter_input" required>
+              <input type="submit" value="Đăng ký" data-i18n-value="newsletter_submit">
+            </div>
+            <div class="loading" data-i18n="newsletter_loading">Đang gửi...</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            <div class="sent-message" data-i18n="newsletter_success">Bạn đã đăng ký thành công. Cảm ơn bạn!</div>
           </form>
         </div>
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Multi</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <p>
+        © <span data-i18n="footer_copyright_prefix">Bản quyền</span>
+        <strong class="px-1 sitename">Takumi</strong>
+        <span data-i18n="footer_copyright_suffix">Đã đăng ký mọi quyền.</span>
+      </p>
+      <div class="credits" data-i18n="footer_credit">
+        Thiết kế bởi <a href="https://bootstrapmade.com/">Nhat Hao</a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader">
@@ -274,7 +310,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/i18n.js"></script>
 </body>
 
 </html>

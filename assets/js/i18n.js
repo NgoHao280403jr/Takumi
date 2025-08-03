@@ -14,7 +14,13 @@ async function loadLanguage(lang) {
         elem.textContent = translations[key];
       }
     });
-
+    // Thay đổi thuộc tính value
+    document.querySelectorAll('[data-i18n-value]').forEach(elem => {
+      const key = elem.getAttribute('data-i18n-value');
+      if (translations[key]) {
+        elem.value = translations[key];
+      }
+    });
     // Cập nhật placeholder cho input/textarea có data-i18n-placeholder
     document.querySelectorAll('[data-i18n-placeholder]').forEach(elem => {
       const key = elem.getAttribute('data-i18n-placeholder');
@@ -46,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Load ngôn ngữ mặc định
-  const savedLang = localStorage.getItem('selectedLanguage') || 'vi';
+  const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   loadLanguage(savedLang);
 
   // Cập nhật nút ban đầu theo ngôn ngữ đã lưu
