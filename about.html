@@ -36,6 +36,48 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    .office-box {
+      background-color: rgba(238, 231, 231, 0.8);
+      border: 1px solid #ddd;
+      transition: all 0.3s ease;
+    }
+
+    .office-box:hover {
+      border-color: #337ab7;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .office-box hr {
+      margin: 0.5rem 0;
+      border: 0;
+      border-top: 1px dashed #337ab7;
+      /* đường kẻ chấm */
+    }
+
+    /* Màu tiêu đề quốc gia */
+    .office-box h4 {
+      color: #337ab7;
+      font-weight: bold;
+    }
+
+    /* Màu chữ thông tin công ty */
+    .office-box p {
+      color: #444;
+      /* Xám đậm cho dễ đọc */
+      margin-bottom: 0.5rem;
+    }
+
+    /* Màu link website */
+    .office-box a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+
+    .office-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -198,6 +240,81 @@
       </div>
 
     </section><!-- /About Section -->
+    <!-- Contact Offices Section -->
+    <section id="offices" class="offices section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="offices_heading"></h2>
+        <div><span data-i18n="offices_sub"></span></div>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Japan -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="office-box p-3 h-100">
+              <h4>
+                <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                  <rect width="20" height="15" fill="white" />
+                  <circle cx="10" cy="7.5" r="4" fill="#BC002D" />
+                </svg>
+                <span data-i18n="office_japan_title"></span>
+              </h4>
+              <hr>
+              <p><strong data-i18n="office_japan_name"></strong></p>
+              <hr>
+              <p data-i18n="office_japan_address"></p>
+            </div>
+          </div>
+
+          <!-- Ho Chi Minh -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="office-box p-3 h-100">
+              <h4>
+                <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                  <rect width="20" height="15" fill="#DA020E" />
+                  <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+                </svg>
+                <span data-i18n="office_hcm_title"></span>
+              </h4>
+              <hr>
+              <p><strong data-i18n="office_hcm_name"></strong></p>
+              <hr>
+              <p data-i18n="office_hcm_address"></p>
+              <hr>
+              <p>
+                <span data-i18n="office_hcm_web"></span>:
+                <a href="http://kyowavina.com" target="_blank">kyowavina.com</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Ha Noi -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="office-box p-3 h-100">
+              <h4>
+                <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                  <rect width="20" height="15" fill="#DA020E" />
+                  <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+                </svg>
+                <span data-i18n="office_hn_title"></span>
+              </h4>
+              <hr>
+              <p><strong data-i18n="office_hn_name"></strong></p>
+              <hr>
+              <p data-i18n="office_hn_address"></p>
+              <hr>
+              <p>
+                <span data-i18n="office_hn_web"></span>:
+                <a href="http://kyowavina.com" target="_blank">kyowavina.com</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
 
   </main>
 
