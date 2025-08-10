@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - Multi Bootstrap Template</title>
+  <title>Portfolio Details - Multi Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -20,14 +20,14 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Multi
@@ -36,26 +36,166 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    p,
+    li {
+      color: #ffffff;
+      /* hoặc màu bạn muốn */
+      text-align: justify;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #ffffff;
+      /* Tiêu đề trắng */
+    }
+
+    a {
+      color: #4dabff;
+      /* Link xanh sáng dễ nhìn */
+    }
+
+    a:hover {
+      color: #82cfff;
+    }
+
+    .table {
+      background-color: #2f2d2d;
+      /* Nền bảng tối hơn */
+      color: #ffffff;
+    }
+
+    .table thead {
+      background-color: #3a3838;
+      color: #ffffff;
+    }
+
+    .product-details {
+      background: #242225;
+      color: #ffffff;
+    }
+
+    .product-image img {
+      width: 140px;
+      height: 600px;
+      object-fit: cover;
+      /* tránh méo hình */
+    }
+
+    .product-details-box {
+      padding: 15px;
+      max-width: 250px;
+      /* giới hạn giống hình */
+      font-size: 14px;
+      background-color: #4b484d;
+    }
+
+    .product-title {
+      color: #d54b1a;
+      /* đỏ cam giống hình */
+      margin-bottom: 15px;
+    }
+
+    .detail-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .detail-label {
+      font-weight: bold;
+      color: #d1c7c7;
+    }
+
+    .detail-value {
+      color: #b4aaaa;
+    }
+
+    .detail-link {
+      color: #39c;
+      text-decoration: none;
+    }
+
+    .detail-link:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 8px 0;
+      border: none;
+      border-top: 1px solid #836e6e;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      border: 1px solid #337ab7;
+    }
+
+    .custom-table th {
+      background-color: #337ab7;
+      color: rgb(241, 230, 230);
+      border: 1px solid #337ab7;
+      padding: 8px;
+    }
+
+    .custom-table td {
+      border: 1px solid #337ab7;
+      padding: 8px;
+      color: rgb(241, 230, 230);
+    }
+
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      white-space: nowrap;
+    }
+
+    .custom-table td[colspan="2"] {
+      text-align: left;
+    }
+
+    .small-img {
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+    }
+
+    #imageCarousel {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
-<body class="service-details-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="../index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/Takumi/z6687056133619_f776ab656707e1157c394817251b4d72-removebg-preview.png" alt="">
+        <img src="../assets/img/Takumi/z6687056133619_f776ab656707e1157c394817251b4d72-removebg-preview.png" alt="">
         <!-- <h1 class="sitename">TAKUMI</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active" data-i18n="home">Trang chủ</a></li>
-          <li><a href="about.html" data-i18n="about">Hồ sơ công ty </a></li>
-          <li><a href="services.html" data-i18n="services">Dịch vụ</a></li>
-          <li><a href="products.html" data-i18n="portfolio">Sản phẩm</a></li>
-          <li><a href="contact.html" data-i18n="contact">Liên hệ</a></li>
+          <li><a href="../index.html" class="active" data-i18n="home">Trang chủ</a></li>
+          <li><a href="../about.html" data-i18n="about">Hồ sơ công ty </a></li>
+          <li><a href="../services.html" data-i18n="services">Dịch vụ</a></li>
+          <li><a href="../products.html" data-i18n="portfolio">Sản phẩm</a></li>
+          <li><a href="../contact.html" data-i18n="contact">Liên hệ</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -103,117 +243,101 @@
           </li>
         </ul>
       </div>
-
     </div>
   </header>
+
   <main class="main">
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1 data-i18n="service.title">Bảo trì & Sửa chữa Máy móc</h1>
-              <p class="mb-0" data-i18n="service.description">
-                Dịch vụ bảo trì và sửa chữa máy móc định kỳ giúp đảm bảo thiết bị hoạt động ổn định, giảm thiểu thời
-                gian ngừng máy và kéo dài tuổi thọ của hệ thống sản xuất.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html" data-i18n="common.home">Trang chủ</a></li>
-            <li class="current" data-i18n="service.breadcrumb">Bảo trì & Sửa chữa</li>
-          </ol>
-        </div>
+
+    <div class="container">
+      <h2 class="fw-bold">EXTRUSION SCREW / BARREL SERIES
+      </h2>
+      <nav aria-label="breadcrumb">
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 5px;">
+          <li><a href="#" style="color: #337ab7; text-decoration: none;">Home</a></li>
+          <li style="color: #337ab7;">&gt;</li>
+          <li style="color: #337ab7;">EXTRUSION SCREW / BARREL SERIES</li>
+        </ul>
       </nav>
-    </div><!-- End Page Title -->
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
-      <div class="container">
-        <div class="row gy-5">
 
-          <!-- Sidebar -->
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="service-box">
-              <h4 data-i18n="service.relatedTitle">Dịch vụ liên quan</h4>
-              <div class="services-list">
-                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span
-                    data-i18n="service.related1">Bảo trì máy móc</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span data-i18n="service.related2">Sửa chữa thiết bị
-                    công nghiệp</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span data-i18n="service.related3">Nâng cấp hệ thống
-                    cơ khí</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span data-i18n="service.related4">Gia công cơ khí
-                    chính xác</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span data-i18n="service.related5">Tư vấn kỹ thuật &
-                    bảo trì</span></a>
+
+      <div class="row mt-4">
+        <!-- Left Column -->
+        <div class="col-md-5">
+          <h5 class="mt-4">Application</h5>
+          <div class="row align-items-center">
+            <div class="">
+              <ul>
+                <li>Rubber</li>
+                <li>Food</li>
+                <li>Film Blowing</li>
+                <li>Silica-gel</li>
+                <li>Exhaust Pumping Tablets And Grit Making</li>
+                <li> Measurement</li>
+                <li> Carbon Rod </li>
+                <li> Thermosetting Machine</li>
+                <li> Pipe Material</li>
+                <li> Cable</li>
+                <li> Profiled Bar</li>
+              </ul>
+            </div>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+
+              <!-- Chấm indicator -->
+              <div class="carousel-indicators">
               </div>
-            </div>
-
-            <div class="service-box">
-              <h4 data-i18n="service.docsTitle">Tài liệu dịch vụ</h4>
-              <div class="download-catalog">
-                <a href="#"><i class="bi bi-filetype-pdf"></i><span data-i18n="service.doc1">Hồ sơ năng
-                    lực.pdf</span></a>
-                <a href="#"><i class="bi bi-file-earmark-word"></i><span data-i18n="service.doc2">Bảng giá dịch
-                    vụ.doc</span></a>
+              <!-- Ảnh -->
+              <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                  <img src="../assets/img/Takumi/SCREW_1.png" class="img-fluid small-img" alt="Ảnh 1">
+                </div>
+                <div class="carousel-item text-center">
+                  <img src="../assets/img/Takumi/SCREW_2-removebg-preview.png" class="img-fluid small-img" alt="Ảnh 2">
+                </div>
               </div>
+              <!-- Nút điều hướng -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
-
-            <div class="help-box d-flex flex-column justify-content-center align-items-center">
-              <i class="bi bi-headset help-icon"></i>
-              <h4 data-i18n="service.needHelp">Cần hỗ trợ?</h4>
-              <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+84 909 123
-                  456</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a
-                  href="mailto:support@congtycokhi.vn">support@congtycokhi.vn</a></p>
+          </div>
+        </div>
+        <!-- Middle Column -->
+        <div class="col-md-5 text-center product-image">
+          <img src="../assets/img/Takumi/SCREW_3-removebg-preview.png" alt="Product Image">
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-2">
+          <div class="product-details-box">
+            <h6 class="product-title">Product details</h6>
+            <div class="detail-item">
+              <span class="detail-label">Date:</span>
+              <span class="detail-value">5月 6, 2014</span>
             </div>
-
+            <hr>
+            <div class="detail-item">
+              <span class="detail-label">Author:</span>
+              <a href="#" class="detail-link">gx761</a>
+            </div>
+            <hr>
           </div>
-
-          <!-- Content -->
-          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="Bảo trì máy móc" class="img-fluid services-img">
-            <h3 data-i18n="service.solutionTitle">Giải pháp bảo trì & sửa chữa máy móc công nghiệp toàn diện</h3>
-            <p data-i18n="service.solutionDesc1">
-              Chúng tôi cung cấp dịch vụ bảo trì định kỳ, khắc phục sự cố khẩn cấp và cải tiến thiết bị giúp doanh
-              nghiệp hoạt động hiệu quả và an toàn hơn. Với đội ngũ kỹ sư dày dạn kinh nghiệm, chúng tôi cam kết mang
-              đến giải pháp nhanh chóng, chính xác và tiết kiệm chi phí.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span data-i18n="service.feature1">Bảo trì định kỳ thiết bị cơ khí
-                  – điện – khí nén.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span data-i18n="service.feature2">Sửa chữa khẩn cấp, thay thế linh
-                  kiện chính hãng.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span data-i18n="service.feature3">Kiểm tra, chuẩn đoán lỗi máy móc
-                  bằng thiết bị chuyên dụng.</span></li>
-            </ul>
-            <p data-i18n="service.solutionDesc2">
-              Dịch vụ của chúng tôi đã đồng hành cùng nhiều nhà máy lớn trong các ngành: sản xuất thực phẩm, cơ khí chế
-              tạo, dệt may, nhựa, in ấn... giúp giảm thiểu rủi ro và nâng cao năng suất đáng kể.
-            </p>
-            <p data-i18n="service.solutionDesc3">
-              Hãy liên hệ ngay với chúng tôi để được tư vấn giải pháp phù hợp cho hệ thống máy móc của bạn. Đầu tư vào
-              bảo trì là đầu tư vào sự ổn định và phát triển bền vững.
-            </p>
-          </div>
-
         </div>
       </div>
-    </section><!-- /Service Details Section -->
+
   </main>
+
+
+
   <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="../index.html" class="logo d-flex align-items-center">
             <span class="sitename">TAKUMI</span>
           </a>
           <div class="footer-contact pt-3">
@@ -300,18 +424,18 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/i18n.js"></script>
 </body>
 
 </html>

@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -20,14 +20,14 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Multi
@@ -36,6 +36,135 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    p,
+    li {
+      color: #ffffff;
+      /* hoặc màu bạn muốn */
+      text-align: justify;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #ffffff;
+      /* Tiêu đề trắng */
+    }
+
+    a {
+      color: #4dabff;
+      /* Link xanh sáng dễ nhìn */
+    }
+
+    a:hover {
+      color: #82cfff;
+    }
+
+    .table {
+      background-color: #2f2d2d;
+      /* Nền bảng tối hơn */
+      color: #ffffff;
+    }
+
+    .table thead {
+      background-color: #3a3838;
+      color: #ffffff;
+    }
+
+    .product-details {
+      background: #242225;
+      color: #ffffff;
+    }
+
+    .product-image img {
+      width: 145px;
+      height: 560px;
+      object-fit: cover;
+      /* tránh méo hình */
+    }
+
+    .product-details-box {
+      padding: 15px;
+      max-width: 250px;
+      /* giới hạn giống hình */
+      font-size: 14px;
+      background-color: #4b484d;
+    }
+
+    .product-title {
+      color: #d54b1a;
+      /* đỏ cam giống hình */
+      margin-bottom: 15px;
+    }
+
+    .detail-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .detail-label {
+      font-weight: bold;
+      color: #d1c7c7;
+    }
+
+    .detail-value {
+      color: #b4aaaa;
+    }
+
+    .detail-link {
+      color: #39c;
+      text-decoration: none;
+    }
+
+    .detail-link:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 8px 0;
+      border: none;
+      border-top: 1px solid #836e6e;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      border: 1px solid #337ab7;
+    }
+
+    .custom-table th {
+      background-color: #337ab7;
+      color: rgb(241, 230, 230);
+      border: 1px solid #337ab7;
+      padding: 8px;
+    }
+
+    .custom-table td {
+      border: 1px solid #337ab7;
+      padding: 8px;
+      color: rgb(241, 230, 230);
+    }
+
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      white-space: nowrap;
+    }
+
+    .custom-table td[colspan="2"] {
+      text-align: left;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -43,22 +172,21 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="../index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/Takumi/z6687056133619_f776ab656707e1157c394817251b4d72-removebg-preview.png" alt="">
+        <img src="../assets/img/Takumi/z6687056133619_f776ab656707e1157c394817251b4d72-removebg-preview.png" alt="">
         <!-- <h1 class="sitename">TAKUMI</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active" data-i18n="home">Trang chủ</a></li>
-          <li><a href="index.html#about" data-i18n="about">Về chúng tôi </a></li>
-          <li><a href="index.html#services" data-i18n="services">Dịch vụ</a></li>
-          <li><a href="index.html#portfolio" data-i18n="portfolio">Sản phẩm</a></li>
-          <li><a href="index.html#team" data-i18n="team">Đội nhóm</a></li>
-          <li><a href="index.html#contact" data-i18n="contact">Liên hệ</a></li>
+          <li><a href="../index.html" class="active" data-i18n="home">Trang chủ</a></li>
+          <li><a href="../about.html" data-i18n="about">Hồ sơ công ty </a></li>
+          <li><a href="../services.html" data-i18n="services">Dịch vụ</a></li>
+          <li><a href="../products.html" data-i18n="portfolio">Sản phẩm</a></li>
+          <li><a href="../contact.html" data-i18n="contact">Liên hệ</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
       <!-- Language switcher with emoji flags -->
       <!-- Bootstrap dropdown chọn ngôn ngữ -->
@@ -109,99 +237,128 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1 data-i18n="product.title">Mũi khoan HSS 5mm</h1>
-              <p class="mb-0" data-i18n="product.description">
-                Sản phẩm mũi khoan thép gió (HSS) 5mm chất lượng cao, phù hợp khoan vật liệu kim loại nhẹ như nhôm, đồng
-                và thép mềm.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html" data-i18n="common.home">Trang chủ</a></li>
-            <li class="current" data-i18n="product.details">Chi tiết sản phẩm</li>
-          </ol>
-        </div>
+    <div class="container">
+      <h2 class="fw-bold">EPS4000 Crest Spray Alloy Series</h2>
+      <nav aria-label="breadcrumb">
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 5px;">
+          <li><a href="#" style="color: #337ab7; text-decoration: none;">Home</a></li>
+          <li style="color: #337ab7;">&gt;</li>
+          <li style="color: #337ab7;">EPS4000 Crest Spray Alloy Series</li>
+        </ul>
       </nav>
-    </div>
-    <!-- End Page Title -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "auto",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                }
-              }
-            </script>
 
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/Takumi/1.jpg" alt="HSS Drill Bit 5mm - Image 1">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/Takumi/1.jpg" alt="HSS Drill Bit 5mm - Image 2">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/Takumi/1.jpg" alt="HSS Drill Bit 5mm - Image 3">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3 data-i18n="product.infoTitle">Thông tin sản phẩm</h3>
+
+      <div class="row mt-4">
+        <!-- Left Column -->
+        <div class="col-md-5">
+          <h5>Introduction</h5>
+          <p>
+            EPS4000 series is made on the basis of high-strength import steel, and covered the bimetallic alloy with the
+            thickness of 1mm-2mm on the surface of screw flight, with abrasion and corrosion resistance.
+          </p>
+
+          <h5 class="mt-4">Application</h5>
+          <div class="row align-items-center">
+            <div class="col-md-8">
               <ul>
-                <li><strong data-i18n="product.categoryLabel">Danh mục</strong>: <span data-i18n="product.category">Mũi
-                    khoan thép gió</span></li>
-                <li><strong data-i18n="product.brandLabel">Thương hiệu</strong>: Takumi Tools</li>
-                <li><strong data-i18n="product.updatedLabel">Ngày cập nhật</strong>: 10/07/2025</li>
-                <li><strong data-i18n="product.websiteLabel">Website</strong>: <a href="#">www.dungcucokhi.vn</a></li>
+                <li>PPA, PPS hardness</li>
+                <li>ABS, PMMA fire prevention</li>
+                <li>LCP high temperature</li>
+                <li>PA, PC and fiber materials</li>
+                <li>PP, PE and other reclaimed materials</li>
+                <li>Bakelite powder</li>
               </ul>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2 data-i18n="product.featuresTitle">Đặc điểm nổi bật</h2>
-              <p data-i18n="product.featuresDesc">
-                Mũi khoan HSS 5mm là lựa chọn lý tưởng cho thợ cơ khí và DIYer chuyên khoan kim loại. Được chế tạo từ
-                vật liệu thép gió cao cấp, mũi khoan có độ bền và khả năng chịu nhiệt cao, giúp kéo dài tuổi thọ khi sử
-                dụng trên máy khoan cầm tay hoặc bàn.
-              </p>
-              <ul>
-                <li data-i18n="product.feature1">✅ Đường kính: 5mm</li>
-                <li data-i18n="product.feature2">✅ Chất liệu: HSS (High Speed Steel)</li>
-                <li data-i18n="product.feature3">✅ Ứng dụng: Khoan thép mềm, nhôm, nhựa kỹ thuật</li>
-                <li data-i18n="product.feature4">✅ Kiểu chuôi: Tròn</li>
-                <li data-i18n="product.feature5">✅ Đóng gói: Vỉ 10 chiếc hoặc hộp 100 chiếc</li>
-              </ul>
+            <div class="col-md-4 text-center">
+              <img src="../assets/img/Takumi/EPS4000_2.png" alt="Alloy Layer" class="img-fluid small-img">
             </div>
           </div>
         </div>
+
+        <!-- Middle Column -->
+        <div class="col-md-5 text-center product-image">
+          <img src="../assets/img/Takumi/EPS4000_1.png" alt="Product Image">
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-2">
+          <div class="product-details-box">
+            <h6 class="product-title">Product details</h6>
+            <div class="detail-item">
+              <span class="detail-label">Date:</span>
+              <span class="detail-value">5月 6, 2014</span>
+            </div>
+            <hr>
+            <div class="detail-item">
+              <span class="detail-label">Author:</span>
+              <a href="#" class="detail-link">gx761</a>
+            </div>
+            <hr>
+          </div>
+
+        </div>
+
+        <!-- Performance Parameters -->
+        <h5 class="mt-5">Performance Parameters</h5>
+        <div class="row justify-content">
+          <div class="col-md-10">
+            <div class="table-responsive">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Series</th>
+                    <th>Type</th>
+                    <th>Hardness</th>
+                    <th>Wearable</th>
+                    <th>Corrosion</th>
+                    <th>Toughness</th>
+                    <th>Machinability</th>
+                    <th>Application</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- Gộp 3 hàng ở cột đầu -->
+                    <td class="vertical-text" rowspan="3">EPS4000</td>
+
+                    <td>EPS4100</td>
+                    <td>HRC56°~58°</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>8</td>
+
+                    <!-- Gộp 3 hàng ở cột cuối -->
+                    <td rowspan="3">Suitable for textile, multi-purpose plastic</td>
+                  </tr>
+                  <tr>
+                    <td>EPS4200</td>
+                    <td>HRC56°~56°</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>EPS4300</td>
+                    <td>HRC60°~62°</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+
+
       </div>
-    </section><!-- /Portfolio Details Section -->
 
   </main>
 
@@ -212,7 +369,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="../index.html" class="logo d-flex align-items-center">
             <span class="sitename">TAKUMI</span>
           </a>
           <div class="footer-contact pt-3">
@@ -299,18 +456,18 @@
   </div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/i18n.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/i18n.js"></script>
 </body>
 
 </html>

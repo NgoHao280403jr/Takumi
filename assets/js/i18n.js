@@ -1,27 +1,33 @@
 // Hàm load file ngôn ngữ (JSON) và cập nhật nội dung các phần tử có data-i18n và data-i18n-placeholder
 async function loadLanguage(lang) {
   try {
-    const response = await fetch(`assets/lang/${lang}.json`);
+    // Nếu HTML nằm trong thư mục con thì cần ../
+    const prefix = window.location.pathname.includes('products_detail') ? '../' : '';
+    const response = await fetch(`${prefix}assets/lang/${lang}.json`);
+
     if (!response.ok) {
       throw new Error(`Không thể tải ngôn ngữ: ${lang}`);
     }
+
     const translations = await response.json();
 
-    // Cập nhật textContent cho các phần tử có data-i18n
+    // Cập nhật textContent
     document.querySelectorAll('[data-i18n]').forEach(elem => {
       const key = elem.getAttribute('data-i18n');
       if (translations[key]) {
         elem.textContent = translations[key];
       }
     });
-    // Thay đổi thuộc tính value
+
+    // Cập nhật value
     document.querySelectorAll('[data-i18n-value]').forEach(elem => {
       const key = elem.getAttribute('data-i18n-value');
       if (translations[key]) {
         elem.value = translations[key];
       }
     });
-    // Cập nhật placeholder cho input/textarea có data-i18n-placeholder
+
+    // Cập nhật placeholder
     document.querySelectorAll('[data-i18n-placeholder]').forEach(elem => {
       const key = elem.getAttribute('data-i18n-placeholder');
       if (translations[key]) {
@@ -29,13 +35,14 @@ async function loadLanguage(lang) {
       }
     });
 
-    // Ghi nhớ ngôn ngữ đã chọn
+    // Lưu ngôn ngữ đã chọn
     localStorage.setItem('selectedLanguage', lang);
 
   } catch (error) {
     console.error("Lỗi khi tải ngôn ngữ:", error);
   }
 }
+
 
 // Gắn sự kiện click cho từng lựa chọn ngôn ngữ
 document.addEventListener("DOMContentLoaded", () => {

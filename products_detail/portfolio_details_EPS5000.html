@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - Multi Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Multi
+  * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    p,
+    li {
+      color: #ffffff;
+      /* hoặc màu bạn muốn */
+      text-align: justify;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #ffffff;
+      /* Tiêu đề trắng */
+    }
+
+    a {
+      color: #4dabff;
+      /* Link xanh sáng dễ nhìn */
+    }
+
+    a:hover {
+      color: #82cfff;
+    }
+
+    .table {
+      background-color: #2f2d2d;
+      /* Nền bảng tối hơn */
+      color: #ffffff;
+    }
+
+    .table thead {
+      background-color: #3a3838;
+      color: #ffffff;
+    }
+
+    .product-details {
+      background: #242225;
+      color: #ffffff;
+    }
+
+    .product-image img {
+      width: 145px;
+      height: 560px;
+      object-fit: cover;
+      /* tránh méo hình */
+    }
+
+    .product-details-box {
+      padding: 15px;
+      max-width: 250px;
+      /* giới hạn giống hình */
+      font-size: 14px;
+      background-color: #4b484d;
+    }
+
+    .product-title {
+      color: #d54b1a;
+      /* đỏ cam giống hình */
+      margin-bottom: 15px;
+    }
+
+    .detail-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .detail-label {
+      font-weight: bold;
+      color: #d1c7c7;
+    }
+
+    .detail-value {
+      color: #b4aaaa;
+    }
+
+    .detail-link {
+      color: #39c;
+      text-decoration: none;
+    }
+
+    .detail-link:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 8px 0;
+      border: none;
+      border-top: 1px solid #836e6e;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+      border: 1px solid #337ab7;
+    }
+
+    .custom-table th {
+      background-color: #337ab7;
+      color: rgb(241, 230, 230);
+      border: 1px solid #337ab7;
+      padding: 8px;
+    }
+
+    .custom-table td {
+      border: 1px solid #337ab7;
+      padding: 8px;
+      color: rgb(241, 230, 230);
+    }
+
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      white-space: nowrap;
+    }
+
+    .custom-table td[colspan="2"] {
+      text-align: left;
+    }
+
+    .bg-box {
+      background-color: rgba(238, 231, 231, 0.8);
+      /* đổi thành màu bạn muốn */
+      padding: 15px;
+      /* thêm khoảng cách giữa ảnh và viền nền */
+    }
+  </style>
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="../index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="../assets/img/Takumi/z6687056133619_f776ab656707e1157c394817251b4d72-removebg-preview.png" alt="">
+        <!-- <h1 class="sitename">TAKUMI</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="../index.html" class="active" data-i18n="home">Trang chủ</a></li>
+          <li><a href="../about.html" data-i18n="about">Hồ sơ công ty </a></li>
+          <li><a href="../services.html" data-i18n="services">Dịch vụ</a></li>
+          <li><a href="../products.html" data-i18n="portfolio">Sản phẩm</a></li>
+          <li><a href="../contact.html" data-i18n="contact">Liên hệ</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <!-- Language switcher with emoji flags -->
+      <!-- Bootstrap dropdown chọn ngôn ngữ -->
+      <div class="dropdown ms-3">
+        <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button"
+          id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+            <rect width="20" height="15" fill="#DA020E" />
+            <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+          </svg>
+          Tiếng Việt
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="vi">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="#DA020E" />
+                <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+              </svg>
+              Tiếng Việt
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="en">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="#012169" />
+                <path d="M0,0 L20,15 M20,0 L0,15" stroke="white" stroke-width="2" />
+                <path d="M0,0 L20,15 M20,0 L0,15" stroke="#C8102E" stroke-width="1" />
+                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="white" stroke-width="3" />
+                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="#C8102E" stroke-width="2" />
+              </svg>
+              English
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="ja">
+              <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                <rect width="20" height="15" fill="white" />
+                <circle cx="10" cy="7.5" r="4" fill="#BC002D" />
+              </svg>
+              日本語
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="container">
+      <h2 class="fw-bold">EPS5000
+        FULL-HARDENED STEEL SERIES
+      </h2>
+      <nav aria-label="breadcrumb">
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 5px;">
+          <li><a href="#" style="color: #337ab7; text-decoration: none;">Home</a></li>
+          <li style="color: #337ab7;">&gt;</li>
+          <li style="color: #337ab7;">EPS5000
+            FULL-HARDENED STEEL SERIES
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+      <div class="row mt-4">
+        <!-- Left Column -->
+        <div class="col-md-5">
+          <h5>Introduction</h5>
+          <p>
+            EPS5000 series material is made of full-hardened steel imported from the large-scale famous steel factories
+            in Germany, Sweden and Japan upon mixing, vacuum and high-temperature quenching, tempering and ultra
+            cryogenic technologies, which has good abrasion resistance. With the excellent thermal stability , it is
+            applied to PVD coating to better the corrosion resistance.
+          </p>
+
+          <h5 class="mt-4">Abrasion test results</h5>
+          <div class="row align-items-center bg-box">
+            <div class="text-center">
+              <img src="../assets/img/Takumi/EPS5000_2.png" alt="Alloy Layer" class="img-fluid small-img">
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Column -->
+        <div class="col-md-5 text-center product-image">
+          <img src="../assets/img/Takumi/EPS5000_1.png" alt="Product Image">
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-md-2">
+          <div class="product-details-box">
+            <h6 class="product-title">Product details</h6>
+            <div class="detail-item">
+              <span class="detail-label">Date:</span>
+              <span class="detail-value">5月 6, 2014</span>
+            </div>
+            <hr>
+            <div class="detail-item">
+              <span class="detail-label">Author:</span>
+              <a href="#" class="detail-link">gx761</a>
+            </div>
+            <hr>
+          </div>
+
+        </div>
+
+        <!-- Performance Parameters -->
+        <h5 class="mt-5">Performance Parameters</h5>
+        <div class="row justify-content">
+          <div class="col-md-10">
+            <div class="table-responsive">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Series</th>
+                    <th>Type</th>
+                    <th>Hardness</th>
+                    <th>Wearable</th>
+                    <th>Corrosion</th>
+                    <th>Toughness</th>
+                    <th>Machinability</th>
+                    <th>Application</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- Gộp 3 hàng ở cột đầu -->
+                    <td class="vertical-text" rowspan="4">EPS5000</td>
+
+                    <td>EPS5100</td>
+                    <td>HRC58°~60°</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>6</td>
+
+                    <!-- Gộp 3 hàng ở cột cuối -->
+                    <td rowspan="4">With PVD coating, it is suitable for PC guide plate, PMMA transparent, white, light,
+                      excellent wear resistance and corrosion resistance</td>
+                  </tr>
+                  <tr>
+                    <td>EPS5200</td>
+                    <td>HRC58°~60°</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>EPS5300</td>
+                    <td>HRC62°~65°</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>EPS5700</td>
+                    <td>HRC62°~68°</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>6</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+  </main>
+
+
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="../index.html" class="logo d-flex align-items-center">
+            <span class="sitename">TAKUMI</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p data-i18n="footer_address_line1">Số 108, Đường Adam</p>
+            <p data-i18n="footer_address_line2">New York, NY 535022</p>
+            <p class="mt-3">
+              <strong data-i18n="footer_phone_label">Điện thoại:</strong>
+              <span>+84 123 456 789</span>
+            </p>
+            <p>
+              <strong data-i18n="footer_email_label">Email:</strong>
+              <span>lienhe@takumi.vn</span>
+            </p>
+          </div>
+
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 data-i18n="footer_quick_links">Liên kết nhanh</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer_link_home">Trang chủ</a></li>
+            <li><a href="#" data-i18n="footer_link_about">Giới thiệu</a></li>
+            <li><a href="#" data-i18n="footer_link_services">Dịch vụ</a></li>
+            <li><a href="#" data-i18n="footer_link_terms">Điều khoản</a></li>
+            <li><a href="#" data-i18n="footer_link_privacy">Chính sách bảo mật</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4 data-i18n="footer_services_title">Dịch vụ của chúng tôi</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer_service_precision">Gia công cơ khí chính xác</a></li>
+            <li><a href="#" data-i18n="footer_service_design">Thiết kế & Chế tạo máy</a></li>
+            <li><a href="#" data-i18n="footer_service_installation">Lắp đặt hệ thống sản xuất</a></li>
+            <li><a href="#" data-i18n="footer_service_maintenance">Bảo trì & Sửa chữa máy móc</a></li>
+            <li><a href="#" data-i18n="footer_service_consulting">Tư vấn giải pháp tự động hóa</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4 data-i18n="newsletter_title">Đăng ký nhận tin</h4>
+          <p data-i18n="newsletter_description">
+            Hãy để lại email để nhận thông tin mới nhất về sản phẩm và dịch vụ của chúng tôi!
+          </p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form">
+              <input type="email" name="email" data-i18n-placeholder="newsletter_input" required>
+              <input type="submit" value="Đăng ký" data-i18n-value="newsletter_submit">
+            </div>
+            <div class="loading" data-i18n="newsletter_loading">Đang gửi...</div>
+            <div class="error-message"></div>
+            <div class="sent-message" data-i18n="newsletter_success">Bạn đã đăng ký thành công. Cảm ơn bạn!</div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>
+        © <span data-i18n="footer_copyright_prefix">Bản quyền</span>
+        <strong class="px-1 sitename">Takumi</strong>
+        <span data-i18n="footer_copyright_suffix">Đã đăng ký mọi quyền.</span>
+      </p>
+      <div class="credits" data-i18n="footer_credit">
+        Thiết kế bởi <a href="https://bootstrapmade.com/">Nhat Hao</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+</body>
+
+</html>
