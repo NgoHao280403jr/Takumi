@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio Details - Multi Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Multi
+  * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style>
+        .text-blue {
+            color: #5B8CD6 !important;
+            /* Ví dụ về một màu xanh dương */
+        }
+
+        hr {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, #5B8CD6, #e3e8eb);
+            margin: 15px 0;
+        }
+
+        /* Product Details Section */
+        .product-details-section {
+            background-color: #262626;
+            /* Màu nền xám đen */
+            color: #fff;
+        }
+
+        .product-details-section .section-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .dps-logo-icon {
+            font-family: 'Times New Roman', Times, serif;
+            /* Font chữ giống trong ảnh */
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .intro-text {
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: #ccc;
+        }
+
+        /* Product Card Styling */
+        .product-card {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+        .product-name {
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 3px solid #5B8CD6;
+            font-size: 18px;
+        }
+
+        .feature-item {
+            border-bottom: 1px solid #444;
+            padding: 8px 0;
+        }
+
+        .feature-label {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #5B8CD6;
+            /* Màu tiêu đề nổi bật */
+        }
+
+        .feature-content {
+            color: #ddd;
+        }
+
+        /* DPS Details Section */
+        .dps-details-section {
+            background-color: #262626;
+            /* Màu nền xám đen */
+            color: #fff;
+            padding-bottom: 0;
+            /* Giảm padding dưới để gần với chú thích */
+        }
+
+        .dps-details-section .section-title {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        .dps-details-section .intro-text-dps {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* Kiểu cho hộp nội dung */
+        .intro-box-container {
+            padding: 1rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Kiểu cho hình ảnh và nhãn */
+        .image-with-label {
+            padding: 0.5rem;
+            height: 100%;
+        }
+
+        .image-with-label img {
+            border: 1px solid #4a4a4a;
+        }
+
+        .image-with-label .image-label {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        /* Chú thích dưới cùng */
+        .microscopic-note {
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        /* History Section */
+        .history-section {
+            background-color: #262626;
+            /* Màu nền xám đậm */
+        }
+
+        /* Tiêu đề section */
+        .history-section .section-title {
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* Ngày cập nhật */
+        .update-date {
+            font-size: 0.8rem;
+            white-space: nowrap;
+        }
+
+        /* Bảng */
+        /* Bảng lịch sử sử dụng */
+        .history-table {
+            width: 100%;
+            border: 1px solid #4a4a4a;
+            color: #fcf0f0;
+            margin-top: 1rem;
+            border-collapse: collapse;
+            /* Đảm bảo các đường viền liền mạch */
+        }
+
+        /* Định dạng chung cho các ô (bao gồm header) */
+        .history-table th,
+        .history-table td {
+            border: 1px solid #4a4a4a;
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        /* Định dạng riêng cho hàng tiêu đề */
+        .history-table thead th {
+            background-color: #5B8CD6;
+            color: #fff;
+            font-weight: normal;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* Làm cho nền của các hàng nội dung trong suốt */
+        .history-table tbody td {
+            background-color: transparent;
+            color: #fff;
+            /* Chữ màu trắng */
+        }
+
+        .two-row-block {
+            border: 1px solid #4a4a4a;
+            color: #fcf0f0;
+        }
+
+        .two-row-block-header {
+            background-color: #03214b;
+            /* Màu nền xanh đậm */
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .two-row-block-body {
+            background-color: transparent;
+            padding: 20px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .two-row-block-body hr {
+            background-color: #4a4a4a;
+            /* Màu đường kẻ ngang */
+            height: 1px;
+            border: none;
+        }
+
+        /* Định kiểu chung cho tất cả các hình ảnh trong phần này */
+        .diagram-container {
+            height: 250px;
+            /* Chiều cao container bạn muốn hiển thị */
+            width: 100%;
+            /* Chiều rộng sẽ được Bootstrap xử lý qua col-md-4 */
+            display: flex;
+            /* Sử dụng flexbox để căn giữa nội dung */
+            align-items: center;
+            /* Căn giữa theo chiều dọc */
+            justify-content: center;
+        }
+
+        .diagram-container img {
+            width: 100%;
+            /* Ảnh sẽ cố gắng lấp đầy chiều rộng của container */
+            height: 100%;
+            /* Ảnh sẽ cố gắng lấp đầy chiều cao của container */
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body class="portfolio-details-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="../index.html" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="../assets/img/Takumi/z6687056133619_f776ab656707e1157c394817251b4d72-removebg-preview.png"
+                    alt="">
+                <!-- <h1 class="sitename">TAKUMI</h1> -->
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="../index.html" class="active" data-i18n="home">Trang chủ</a></li>
+                    <li><a href="../about.html" data-i18n="about">Hồ sơ công ty </a></li>
+                    <li><a href="../services.html" data-i18n="services">Dịch vụ</a></li>
+                    <li class="dropdown"><a href="../products.html"><span data-i18n="portfolio">Sản phẩm</span> 
+                        <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="../product-type/screw_parts.html">Bộ phận vít</a></li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact.html" data-i18n="contact">Liên hệ</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <!-- Language switcher with emoji flags -->
+            <!-- Bootstrap dropdown chọn ngôn ngữ -->
+            <div class="dropdown ms-3">
+                <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button"
+                    id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                        <rect width="20" height="15" fill="#DA020E" />
+                        <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+                    </svg>
+                    Tiếng Việt
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="vi">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="#DA020E" />
+                                <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6"
+                                    fill="#FFFF00" />
+                            </svg>
+                            Tiếng Việt
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="en">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="#012169" />
+                                <path d="M0,0 L20,15 M20,0 L0,15" stroke="white" stroke-width="2" />
+                                <path d="M0,0 L20,15 M20,0 L0,15" stroke="#C8102E" stroke-width="1" />
+                                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="white" stroke-width="3" />
+                                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="#C8102E" stroke-width="2" />
+                            </svg>
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="ja">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="white" />
+                                <circle cx="10" cy="7.5" r="4" fill="#BC002D" />
+                            </svg>
+                            日本語
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="section bg-product-header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-start blue-header-bg">
+                    <i class="bi bi-box-fill product-icon me-2 text-blue"></i>
+                    <h2 class="text-blue">Bộ phận vít</h2>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <img src="../assets/img/Takumi//584e5da30d63e1d160a42415.png" class="img-fluid"
+                            alt="Vít máy ép phun/máy đùn">
+                        <p class="mt-2 text-white-50">Vít máy ép phun/máy đùn</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="../assets/img/Takumi/bophanvit2.png" class="img-fluid" alt="Máy đùn trục vít đôi">
+                        <p class="mt-2 text-white-50">Máy đùn trục vít đôi</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="../assets/img/Takumi/bophanvit3.png" class="img-fluid" alt="Vít đặc biệt">
+                        <p class="mt-2 text-white-50">Vít đặc biệt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-product-info py-4">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center text-white info-text-row">
+                    <div class="d-flex align-items-start info-item">
+                        <div class="info-dot"></div>
+                        <p class="ms-3 mb-0 flex-grow-1">
+                            <span data-i18n="product_info_1">
+                                Tuổi thọ cao đạt được nhờ sự kết hợp kim chống mòn và chống ăn mòn được sản xuất riêng
+                                cho vít từ <a href="#" class="info-link">sự kết hợp của các loại thép đặc biệt</a> và
+                                phương pháp sản xuất đặc độc của nhà sản xuất vít số 1.Chúng tôi sản xuất một thiết bị,
+                                từ vít cho máy ép phun và máy đùn từ nhiều nhà sản xuất
+                                khác nhau đến vít đặc biệt. Được sản xuất với giá thành thấp nhờ <a href="#"
+                                    class="info-link">vật liệu đúc chất
+                                    lượng cao</a>.Chúng tôi có thể đề xuất vít từ các vật liệu tiêu chuẩn Hợp kim nhôm
+                                và <a href="#" class="info-link">các loại hợp kim khác</a> cho vít.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container py-2">
+                <h3 class="mb-0 text-white" data-i18n="company_info_text">Công ty TNHH Sản xuất Watanabe. Giới thiệu
+                    vật liệu chống ăn mòn và chống mài mòn</h3>
+                <hr>
+            </div>
+        </section>
+        <section class="section product-details-section">
+            <div class="container">
+                <h2 class="section-title text-white mb-4">
+                    <span class="dps-logo-icon">大同特殊鋼の</span>DPSシリーズ
+                </h2>
+
+                <p class="text-white-10">
+                    Đây là vật liệu chống ăn mòn và chống mài mòn mạnh nhất, được Daido Steel, nhà sản xuất thép đặc
+                    biệt số một thế giới, chuyên dùng cho ốc vít, cho ra mắt.
+                    Có nhiều loại vật liệu khác nhau, bao gồm cả thông số kỹ thuật hợp kim bột có khả năng chống mài mòn
+                    và chống ăn mòn cực cao.
+                </p>
+
+                <div class="row gx-4 gy-4">
+                    <!-- DPS400 -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <h3 class="product-name">DPS400</h3>
+                            <div class="product-features">
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">đặc trưng</span>
+                                    <div class="feature-content col-8 text-justify">
+                                        Khả năng chống mài mòn và ăn mòn cao. *Ngăn ngừa bỏng và nhiễm bẩn (lớp bề mặt
+                                        cứng độc đáo mang lại khả năng bóc tách nhựa tuyệt vời).
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">độ cứng</span>
+                                    <div class="feature-content col-8">
+                                        HRC56～58
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">Mục đích</span>
+                                    <div class="feature-content col-8 text-justify">
+                                        Ví dụ về nhựa kỹ thuật siêu cấp: PBT + GF 30% đến 40%, PA + GF 30% đến 40%, POM
+                                        + GF 30% đến 40%, PVC, v.v.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DPS450R -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <h3 class="product-name">DPS450R</h3>
+                            <div class="product-features">
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">đặc trưng</span>
+                                    <div class="feature-content col-8 text-justify">
+                                        Quy trình sản xuất bột và xử lý ESR siêu chống mài mòn và siêu chống ăn mòn mang
+                                        lại khả năng chống ăn mòn và độ bóng gương tuyệt vời, ngăn ngừa sự ăn mòn bởi
+                                        các loại khí như PPS. Sản phẩm cũng lý tưởng cho nhựa gia cường GF.
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">độ cứng</span>
+                                    <div class="feature-content col-8">
+                                        HRC60～62
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">Mục đích</span>
+                                    <div class="feature-content col-8 text-justify">
+                                        Nhựa kỹ thuật siêu cấp: Ví dụ sử dụng: PPS + GF 30% đến 40%, PA6T + GF 30% đến
+                                        40%, v.v.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DPS570X -->
+                    <div class="col-md-4">
+                        <div class="product-card">
+                            <h3 class="product-name">DPS570X</h3>
+                            <div class="product-features">
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">đặc trưng</span>
+                                    <div class="feature-content col-8 text-justify">
+                                        Quy trình sản xuất bột có khả năng chống mài mòn và chống ăn mòn cực cao kết hợp
+                                        độ cứng đáng kinh ngạc với tính linh hoạt, đảm bảo tuổi thọ lâu dài ngay cả
+                                        trong môi trường khắc nghiệt với bất kỳ loại nhựa nào.
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">độ cứng</span>
+                                    <div class="feature-content col-8">
+                                        HRC68～70
+                                    </div>
+                                </div>
+                                <div class="feature-item d-flex">
+                                    <span class="feature-label col-4">Mục đích</span>
+                                    <div class="feature-content col-8 text-justify">
+                                        Nhựa kỹ thuật siêu cấp: Ví dụ sử dụng: PPS + GF 50% trở lên, PA + GF 50% trở
+                                        lên, LCP (loại chịu nhiệt độ cao), mica, nam châm nhựa, gốm, PEEK, v.v.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section">
+            <div class="container ">
+                <h3 class="text-white" data-i18n="company_info_text">Dữ liệu thử nghiệm và kết quả</h3>
+                <hr>
+
+            </div>
+
+        </section>
+        <section class="section product-diagram-section">
+            <div class="container">
+                <h2 class="section-title text-white">
+                    <span class="dps-logo-icon">大同特殊鋼の</span>DPS400（スクリュー専用財）
+                </h2>
+                <h3 class="technical-drawing-title text-white">
+                    <span class="title-with-bg">Đường kính vít chống ăn mòn. Φ249 Nhựa sử dụng: PPS+GF30%</span>
+                </h3>
+
+                <div class="row gx-4 align-items-center">
+                    <div class="col-md-6 text-center">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw1.jpg" alt="Biểu đồ đường kính vít chống ăn mòn"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section technical-drawing-section">
+            <div class="container">
+                <h3 class="technical-drawing-title text-white">
+                    Ví dụ về trạng thái hao mòn (DPS400)
+                </h3>
+                <div class="text-center">
+                    <img src="../assets/img/Takumi/screw2.jpg" alt="Bản vẽ trạng thái hao mòn DPS400" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <section class="section product-diagram-section">
+            <div class="container">
+                <h3 class="technical-drawing-title text-white">
+                    Khả năng chống mài mòn
+                </h3>
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw3.jpg" alt="Biểu đồ đường kính vít chống ăn mòn"
+                                class="img-fluid">
+                        </div>
+                        <span class="diagram-caption text-white">Thử nghiệm mài mòn kiểu Ogoshi</span>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw4.jpg" alt="Biểu đồ đường kính vít chống ăn mòn"
+                                class="img-fluid">
+                        </div>
+                        <span class="diagram-caption text-white">Kiểm tra độ mài mòn</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section product-diagram-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 text-center">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw3.jpg" alt="Biểu đồ đường kính vít chống ăn mòn"
+                                class="img-fluid">
+                        </div>
+                        <span class="diagram-caption">5 % H2SO4</span>
+                    </div>
+
+                    <div class="col-md-4 text-center">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw4.jpg" alt="Biểu đồ đường kính vít chống ăn mòn"
+                                class="img-fluid">
+                        </div>
+                        <span class="diagram-caption text-white">1% HF</span>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw4.jpg" alt="Biểu đồ đường kính vít chống ăn mòn"
+                                class="img-fluid">
+                        </div>
+                        <span class="diagram-caption text-white">1% HF</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section cooling-process-section py-2">
+            <div class="container">
+                <div class="d-flex">
+
+                    <div class="cooling-block  mx-4">
+                        <p class="mb-1 text-white fw-bold">DPS400</p>
+                        <small class="text-white-50">Làm nguội: 1050℃</small><br>
+                        <small class="text-white-50">Làm nguội: 550℃</small>
+                    </div>
+
+                    <div class="cooling-block mx-4">
+                        <p class="mb-1 text-white fw-bold">vít Y</p>
+                        <small class="text-white-50">Làm nguội: 1050℃</small><br>
+                        <small class="text-white-50">Làm nguội: 550℃</small>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section dps-details-section">
+            <div class="container py-5">
+                <h2 class="section-title text-white mb-5">
+                    <span class="dps-logo-icon">大同特殊鋼の</span>DPS570X
+                    <small class="text-white-50">(驚異の粉末ハイス鋼)</small>
+                </h2>
+
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <div class="intro-box-container">
+                            <p class="intro-text-dps text-white-20 text-justify">
+                                DPS570X được chế tạo bằng phương pháp xử lý ESR (phương pháp nung chảy đặc biệt của điện
+                                cực tiêu hao) và hợp kim bột thiên tài cho vít ép tạo chất, mang lại độ cứng đáng kinh
+                                ngạc HRC68-70 và tính linh hoạt, đạt được tuổi thọ cao ngay cả với các loại nhựa khắc
+                                nghiệt nhất. Ngoài ra, nó có khả năng chống ăn mòn cao do sự phân tách tối thiểu trong
+                                cấu trúc.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="row gx-2">
+                            <div class="col-6">
+                                <div class="image-with-label">
+                                    <img src="../assets/img/Takumi/screw5.jpg" alt="Ảnh vi cấu trúc của DPS570X"
+                                        class="img-fluid">
+                                    <p class="image-label text-center text-white-10">DPS570X</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="image-with-label">
+                                    <img src="../assets/img/Takumi/screw6.jpg"
+                                        alt="Ảnh vi cấu trúc của vật liệu công ty khác" class="img-fluid">
+                                    <p class="image-label text-center text-white-10">Vật liệu của công ty khác</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <p class="microscopic-note text-white-50 mb-0">
+                            Kiểm tra độ ăn mòn và mài mòn của nhựa của công ty chúng tôi (ảnh một mặt)
+                        </p>
+                    </div>
+                    <div class="col-12 text-center mt-2">
+                        <p class="microscopic-note text-white-50 mb-0 text-justify">
+                            570X có cấu trúc đồng đều hơn so với các vật liệu của đối thủ cạnh tranh khác. Đầu ốc vít có
+                            độ uốn ngay, lại khả năng chống ăn mòn tuyệt vời.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section history-section py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="section-title text-white">Lịch sử sử dụng</h2>
+                    <p class="text-white-30 update-date">
+                        *Tính đến: tháng 12 năm 2016
+                    </p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered history-table">
+                        <thead>
+                            <tr>
+                                <th class="table-header">Người mẫu</th>
+                                <th class="table-header">Đường kính vít</th>
+                                <th class="table-header">Vật liệu đúc</th>
+                                <th class="table-header">Lịch sử sử dụng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sumitomo SE18DU</td>
+                                <td>Φ 16</td>
+                                <td>PPS+GF60%</td>
+                                <td>44 tháng sử dụng liên tục</td>
+                            </tr>
+                            <tr>
+                                <td>Sumitomo SE220HS</td>
+                                <td>Φ 45</td>
+                                <td>PPS+GF40%</td>
+                                <td>59 tháng sử dụng liên tục</td>
+                            </tr>
+                            <tr>
+                                <td>Nissei NEX50 5E</td>
+                                <td>Φ 22</td>
+                                <td>Pla-mas (neodymium)</td>
+                                <td>42 tháng sử dụng liên tục</td>
+                            </tr>
+                            <tr>
+                                <td>MADEN2000 Ⅱ nối tiếp</td>
+                                <td>Φ 45</td>
+                                <td>ABS + 40% mica</td>
+                                <td>46 tháng sử dụng liên tục</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="note-container">
+                    <h3 class="note-title text-white">Trường hợp được báo cáo</h3>
+                    <hr>
+                    <p class="note-text text-white-20">
+                        <small>Báo cáo trường học của ông S, đại diện bán hàng tại Công ty TNHH Sản xuất
+                            Watanabe.</small>
+                    </p>
+                    <p class="note-text text-white-20">
+                        <small>Chúng tôi sản xuất đạn được, trục vít và nòng sau từ một nhà sản xuất phụ tùng ô
+                            tô.</small>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container py-1">
+                <div class="two-row-block">
+                    <div class="two-row-block-header">
+                        [Nội dung tư vấn]
+                    </div>
+
+                    <div class="two-row-block-body">
+                        <p class="mb-2">
+                            Nhựa được sử dụng là PPS + 50%kính thủy tinh, và nhà sản xuất máy đúc đã sử dụng vít chống
+                            ăn mòn, chống mài mòn, đã được sử dụng khoảng sáu tháng,
+                            <br><br>
+                            <span class="text-danger">Mặc dù chúng tôi không muốn tăng chi phí, nhưng chúng tôi muốn cải
+                                thiện độ bền của vít.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-1">
+                <div class="two-row-block">
+                    <div class="two-row-block-header">
+                        [Đề xuất từ ​​Watanabe Manufacturing]
+                    </div>
+
+                    <div class="two-row-block-body">
+                        <p class="mb-2">
+                            Chúng tôi đề xuất thép tốc độ cao dạng bột DPS570X, có thể xử lý khí lưu huỳnh điôxít do PPS
+                            tạo ra và cũng tương thích với GF50%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-1">
+                <div class="two-row-block">
+                    <div class="two-row-block-header">
+                        【Kết quả】
+                    </div>
+
+                    <div class="two-row-block-body">
+                        <p class="mb-2">
+                            Đã hai năm trôi qua kể từ lần đầu tiên sử dụng sản phẩm, và không có vấn đề gì lớn nào với
+                            khuôn đúc. Hơn nữa, các phép đo độ mòn cho thấy nhiệt độ tối đa là 0,07°F sau hai năm sử
+                            dụng, nhưng không có hiện tượng mòn hay ăn mòn đáng kể.
+                            <br>
+                            <span>Khách hàng cũng khen ngợi độ bền đã tăng khoảng bốn lần mà không làm tăng đáng kể chi
+                                phí.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section coating-section">
+            <div class="container">
+                <h2 class="section-title text-white">Lớp phủ</h2>
+                <hr class="title-underline">
+                <p class="text-white-20">
+                    Ngoài loại vít tiêu chuẩn Hor (mạ crôm cứng), chúng tôi còn cung cấp nhiều loại lớp phủ khác nhau để
+                    cải thiện khả năng chống ăn mòn và mài mòn.
+                </p>
+
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="../assets/img/Takumi/screw7.png" alt="Các loại vít được phủ lớp"
+                            class="img-fluid coating-image">
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="coating-list text-white">
+                            <li><span class="list-marker"></span>Thiết kế: Lớp phủ nitrit titan</li>
+                            <li><span class="list-marker"></span>TiCN: Lớp phủ titan carbonitrit</li>
+                            <li><span class="list-marker"></span>CR2N: Lớp phủ crom nitrit</li>
+                            <li><span class="list-marker"></span>NB: Lớp phủ niken boron (cho các bộ phận)</li>
+                            <li><span class="list-marker"></span>Nhiều lớp phủ khác <span class="text-danger">liên
+                                    quan</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="two-row-block">
+                    <div class="two-row-block-header">
+                        Những điểm chính khi chọn vít
+                    </div>
+
+                    <div class="two-row-block-body">
+                        <p class="mb-2 text-justify">
+                            Những tiến bộ nhanh chóng gần đây trong lĩnh vực nhựa kỹ thuật đã dẫn đến việc ứng dụng
+                            chúng trong nhiều loại linh kiện an toàn quan trọng, từ các bộ phận động cơ ô tô đến động cơ
+                            máy bay. Sự phát triển nhanh chóng của các loại nhựa mới, đòi hỏi khắt khe hơn đã dẫn đến
+                            việc sử dụng nhựa ngày càng nhiều làm linh kiện chức năng. Tất nhiên, chúng tôi khuyến nghị
+                            sử dụng vật liệu chống ăn mòn và mài mòn cho vít và xi lanh, đảm bảo thời gian sản xuất tự
+                            động hóa hoàn toàn ngay cả trong thời gian ngắn nhất có thể. Tuy nhiên, có rất nhiều loại
+                            vật liệu chống ăn mòn và mài mòn, vì vậy chúng tôi khuyên bạn nên chọn đúng loại vật liệu
+                            vít và xi lanh cho loại nhựa được đúc hoặc đùn. Vật liệu siêu chống mài mòn không cần thiết
+                            cho nhựa có GF khoảng 30%. Ngay cả với GF cao, nhựa không tạo ra khí ăn mòn cũng không yêu
+                            cầu vật liệu chống ăn mòn cao. Nếu bạn gặp phải loại nhựa khó đúc, một thay đổi đơn giản
+                            trong thiết kế vít có thể cải thiện đáng kể kết quả đúc. Ngay cả những thay đổi nhỏ cũng
+                            được hoan nghênh. Vui lòng tham khảo ý kiến ​​các chuyên gia của Watanabe Seisakusho.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <p class=" text-white-40">
+                    Đây là vật liệu chống ăn mòn và chống mài mòn mạnh nhất, được Daido Steel, nhà sản xuất thép đặc
+                    chủng số một thế giới, phát triển thành vật liệu chuyên dụng cho ốc vít. Phương pháp sản xuất độc
+                    đáo của Watanabe Seisakusho đã giúp giảm thiểu chi phí!!
+                </p>
+            </div>
+        </section>
+        <div class="text-center"> <img src="../assets/img/Takumi/screw8.jpg" alt="Các loại vít được phủ lớp"
+                class="img-fluid coating-image">
+        </div>
+        <section class="section product-diagram-section">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-md-4">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw9.jpg" alt="Vít 1" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw10.jpg" alt="Vít 2" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="diagram-container">
+                            <img src="../assets/img/Takumi/screw11.jpg" alt="Vít 3" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="../index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">TAKUMI</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p data-i18n="footer_address_line1">Số 108, Đường Adam</p>
+                        <p data-i18n="footer_address_line2">New York, NY 535022</p>
+                        <p class="mt-3">
+                            <strong data-i18n="footer_phone_label">Điện thoại:</strong>
+                            <span>+84 123 456 789</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="footer_email_label">Email:</strong>
+                            <span>lienhe@takumi.vn</span>
+                        </p>
+                    </div>
+
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4 data-i18n="footer_quick_links">Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer_link_home">Trang chủ</a></li>
+                        <li><a href="#" data-i18n="footer_link_about">Giới thiệu</a></li>
+                        <li><a href="#" data-i18n="footer_link_services">Dịch vụ</a></li>
+                        <li><a href="#" data-i18n="footer_link_terms">Điều khoản</a></li>
+                        <li><a href="#" data-i18n="footer_link_privacy">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4 data-i18n="footer_services_title">Dịch vụ của chúng tôi</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer_service_precision">Gia công cơ khí chính xác</a></li>
+                        <li><a href="#" data-i18n="footer_service_design">Thiết kế & Chế tạo máy</a></li>
+                        <li><a href="#" data-i18n="footer_service_installation">Lắp đặt hệ thống sản xuất</a></li>
+                        <li><a href="#" data-i18n="footer_service_maintenance">Bảo trì & Sửa chữa máy móc</a></li>
+                        <li><a href="#" data-i18n="footer_service_consulting">Tư vấn giải pháp tự động hóa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4 data-i18n="newsletter_title">Đăng ký nhận tin</h4>
+                    <p data-i18n="newsletter_description">
+                        Hãy để lại email để nhận thông tin mới nhất về sản phẩm và dịch vụ của chúng tôi!
+                    </p>
+                    <form action="forms/newsletter.php" method="post" class="php-email-form">
+                        <div class="newsletter-form">
+                            <input type="email" name="email" data-i18n-placeholder="newsletter_input" required>
+                            <input type="submit" value="Đăng ký" data-i18n-value="newsletter_submit">
+                        </div>
+                        <div class="loading" data-i18n="newsletter_loading">Đang gửi...</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message" data-i18n="newsletter_success">Bạn đã đăng ký thành công. Cảm ơn bạn!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>
+                © <span data-i18n="footer_copyright_prefix">Bản quyền</span>
+                <strong class="px-1 sitename">Takumi</strong>
+                <span data-i18n="footer_copyright_suffix">Đã đăng ký mọi quyền.</span>
+            </p>
+            <div class="credits" data-i18n="footer_credit">
+                Thiết kế bởi <a href="https://bootstrapmade.com/">Nhat Hao</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/i18n.js"></script>
+</body>
+
+</html>
