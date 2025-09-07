@@ -2,7 +2,7 @@
 async function loadLanguage(lang) {
   try {
     // Nếu HTML nằm trong thư mục con thì cần ../
-    const prefix = window.location.pathname.includes('products_detail') ? '../' : '';
+    const prefix = (window.location.pathname.includes('products_detail')|| window.location.pathname.includes('product-type')) ? '../' : '';
     const response = await fetch(`${prefix}assets/lang/${lang}.json`);
 
     if (!response.ok) {

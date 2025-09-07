@@ -390,7 +390,40 @@
   "office_hn_title": "Tại Hà Nội",
   "office_hn_name": "KYOWA VIETNAM INDUSTRY CO.,LTD",
   "office_hn_address": "Địa chỉ: 319 Thụy Khuê, Phường Bưởi, Quận Tây Hồ, Hà Nội, Việt Nam",
-  "office_hn_web": "Web"
+  "office_hn_web": "Web",
+
+  "menu_screw_parts": "Bộ phận vít",
+  "menu_cylinder_parts": "Bộ phận xi lanh",
+  "menu_parts_department": "Bộ phận linh kiện",
+  "menu_maintenance_service": "Dịch vụ bảo trì",
+  "menu_design_screw": "Vít thiết kế",
+  "menu_high_mixing_screw": "Thiết kế vít trộn cao",
+  "menu_anti_drip_nozzle": "Vòi phun chống rò rỉ và nhỏ giọt",
+  "menu_causes_of_wear": "Nguyên nhân gây hao mòn",
+
+  "anti_drip_nozzle_title": "Vòi phun chống rò rỉ và nhỏ giọt",
+
+
+
+
+  "problem_goal_heading": "Vấn đề và mục tiêu",
+  "use_daido_material": "Sử dụng vật liệu chống ăn mòn và chống mài mòn của Daido Steel để đạt được tuổi thọ cao",
+  "create_nozzle": "Tạo ra các vòi phun ngăn ngừa hiện tượng dây và nhỏ giọt",
+  "durability_issue": "Bạn đang gặp vấn đề về độ dai hoặc nhỏ giọt? Chúng tôi đã có thể giải quyết vấn đề của bạn bằng bí quyết độc đáo của Watanabe Manufacturing.",
+  "solution": "Chúng tôi có thể giải quyết những vấn đề này với tuổi thọ cao và chi phí thấp.",
+  "test_data_heading": "Dữ liệu thử nghiệm và kết quả",
+  "nozzle_report": "Báo cáo về vòi phun ngăn dây",
+  "material_pbt": "*Nhựa: Nhựa PBT không chứa thủy tinh",
+  "material_mitsubishi": "*Nhựa kỹ thuật Mitsubishi Novaduran 5010N6-3X PK1145",
+  "condition_same": "*Tất ​​cả các điều kiện đều giống nhau ngoại trừ nhiệt độ vòi phun",
+  "same_condition": "Điều kiện đúc khuôn giống nhau, và vòi phun chống hiện tượng dây và nhỏ giọt đã được sử dụng.",
+  "adjust_temperature": "Bằng cách điều chỉnh nhiệt độ vòi phun, hiện tượng dây đã được ngăn chặn.",
+  "nozzle_selection_points": "Những điểm chính khi lựa chọn vòi phun",
+  "nozzle_function": "Chức năng cuối cùng của vòi phun là đưa nhựa vào khuôn một cách trơn tru và tạo độ tiếp xúc tốt giữa vòi phun và khuôn. Hiệu suất của vòi phun phải đảm bảo không bị rò rỉ nhựa trong quá trình phun. Sự mài mòn ở đầu vòi phun và sự mài mòn ở lỗ đầu vòi phun có thể gây ra nhiều tác động tiêu cực.",
+  "nozzle_accumulation": "Nếu nhựa tích tụ trên đường kính bên trong của vòi phun, nó sẽ thoát ra ngoài dưới dạng tạp chất cháy. Hơn nữa, vòi phun là bộ phận phun có sự biến động nhiệt độ lớn nhất, vì vậy nếu nhiệt độ ở đầu vòi phun giảm, nó có thể gây ra hiện tượng đóng cục lạnh, và nếu nhiệt độ tăng, nó có thể gây ra hiện tượng dây nhựa.",
+  "nozzle_material_design": "Đầu tiên, bằng cách sử dụng vật liệu vòi phun có khả năng giữ nhiệt tốt và thiết kế để ngăn ngừa hiện tượng dây nhựa và nhỏ giọt, bạn có thể đảm bảo hoạt động đúc khuôn trơn tru hơn.",
+  "causes_of_wear": "Nguyên nhân gây hao mòn"
+
 
 
 }

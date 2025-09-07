@@ -389,5 +389,16 @@
   "office_hn_title": "ハノイ市",
   "office_hn_name": "KYOWA VIETNAM INDUSTRY CO.,LTD",
   "office_hn_address": "住所: ベトナム、ハノイ市タイホ区ブオイ坊スイ・クエ319番地",
-  "office_hn_web": "ウェブ"
+  "office_hn_web": "ウェブ",
+
+  "menu_screw_parts": "スクリューパーツ",
+  "menu_cylinder_parts": "シリンダーパーツ",
+  "menu_parts_department": "部品部門",
+  "menu_maintenance_service": "メンテナンスサービス",
+  "menu_design_screw": "設計スクリュー",
+  "menu_high_mixing_screw": "高混練スクリュー設計",
+  "menu_anti_drip_nozzle": "糸引防止・滴下防止ノズル",
+  "menu_causes_of_wear": "摩耗の原因",
+
+  "anti_drip_nozzle_title": "糸引防止・滴下防止ノズル"
 }

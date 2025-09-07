@@ -391,5 +391,16 @@
   "office_hn_title": "At Ha Noi",
   "office_hn_name": "KYOWA VIETNAM INDUSTRY CO.,LTD",
   "office_hn_address": "Address: 319 Thuy Khue, Buoi Ward, Tay Ho District, Hanoi City, Vietnam",
-  "office_hn_web": "Web"
+  "office_hn_web": "Web",
+
+  "menu_screw_parts": "Screw Parts",
+  "menu_cylinder_parts": "Cylinder Parts",
+  "menu_parts_department": "Parts Department",
+  "menu_maintenance_service": "Maintenance Service",
+  "menu_design_screw": "Design Screw",
+  "menu_high_mixing_screw": "High Mixing Screw Design",
+  "menu_anti_drip_nozzle": "Anti-Drip Nozzle",
+  "menu_causes_of_wear": "Causes of Wear",
+  
+  "anti_drip_nozzle_title": "Anti-Drip Nozzle"
 }

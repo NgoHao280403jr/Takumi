@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio Details - Multi Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Multi
+  * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style>
+        .text-blue {
+            color: #5B8CD6 !important;
+            /* Ví dụ về một màu xanh dương */
+        }
+
+        hr {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, #5B8CD6, #e3e8eb);
+            margin: 15px 0;
+        }
+
+        .custom-box {
+            background-color: #0a3d69;
+            color: white;
+        }
+
+        /* style danh sách */
+        .custom-box ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .custom-box li {
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        section {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .title-with-line {
+            position: relative;
+            display: inline-block;
+        }
+
+        .title-with-line::after {
+            content: '';
+            display: block;
+            width: 1000px;
+            height: 2px;
+            background-color: #5f1e1e;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Làm cho nền của các hàng nội dung trong suốt */
+        .history-table tbody td {
+            background-color: transparent;
+            color: #fff;
+            /* Chữ màu trắng */
+        }
+
+        .two-row-block {
+            border: 1px solid #4a4a4a;
+            color: #fcf0f0;
+        }
+
+        .two-row-block-header {
+            background-color: #03214b;
+            /* Màu nền xanh đậm */
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .two-row-block-body {
+            background-color: transparent;
+            padding: 20px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .two-row-block-body hr {
+            background-color: #4a4a4a;
+            /* Màu đường kẻ ngang */
+            height: 1px;
+            border: none;
+        }
+
+        .text-indent {
+            text-indent: 2em;
+            /* thụt vào 1 tab */
+        }
+    </style>
+</head>
+
+<body class="portfolio-details-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="../index.html" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="../assets/img/Takumi/LogoTakumi-removebg-preview.png" alt="">
+                <!-- <h1 class="sitename">TAKUMI</h1> -->
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="../index.html" class="active" data-i18n="home">Trang chủ</a></li>
+                    <li><a href="../about.html" data-i18n="about">Hồ sơ công ty </a></li>
+                    <li><a href="../services.html" data-i18n="services">Dịch vụ</a></li>
+                    <li class="dropdown"><a href="../products.html"><span data-i18n="portfolio">Sản phẩm</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="../product-type/screw_parts.html" data-i18n="menu_screw_parts"></a></li>
+                            <li><a href="../product-type/cylinder_parts.html" data-i18n="menu_cylinder_parts"></a></li>
+                            <li><a href="../product-type/parts_department.html" data-i18n="menu_parts_department"></a>
+                            </li>
+                            <li><a href="../product-type/maintenance_service.html"
+                                    data-i18n="menu_maintenance_service"></a></li>
+                            <li><a href="../product-type/parts_department.html" data-i18n="menu_design_screw"></a></li>
+                            <li><a href="../product-type/high_mixing_screw.html" data-i18n="menu_high_mixing_screw"></a>
+                            </li>
+                            <li><a href="../product-type/anti_drip_nozzle.html" data-i18n="menu_anti_drip_nozzle"></a>
+                            </li>
+                            <li><a href="../product-type/causes_of_wear.html" data-i18n="menu_causes_of_wear"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact.html" data-i18n="contact">Liên hệ</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <!-- Language switcher with emoji flags -->
+            <!-- Bootstrap dropdown chọn ngôn ngữ -->
+            <div class="dropdown ms-3">
+                <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button"
+                    id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                        <rect width="20" height="15" fill="#DA020E" />
+                        <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+                    </svg>
+                    Tiếng Việt
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="vi">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="#DA020E" />
+                                <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6"
+                                    fill="#FFFF00" />
+                            </svg>
+                            Tiếng Việt
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="en">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="#012169" />
+                                <path d="M0,0 L20,15 M20,0 L0,15" stroke="white" stroke-width="2" />
+                                <path d="M0,0 L20,15 M20,0 L0,15" stroke="#C8102E" stroke-width="1" />
+                                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="white" stroke-width="3" />
+                                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="#C8102E" stroke-width="2" />
+                            </svg>
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="ja">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="white" />
+                                <circle cx="10" cy="7.5" r="4" fill="#BC002D" />
+                            </svg>
+                            日本語
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="section bg-product-header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-start blue-header-bg">
+                    <i class="bi bi-box-fill product-icon me-2 text-blue"></i>
+                    <h3 class="text-blue" data-i18n="causes_of_wear"></h3>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="section h-aloy-section">
+            <div class="container">
+                <h5 class="section-title text-white title-with-line mt-4 ">Tại sao nó lại bị mòn?</h5>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="h-aloy-block">
+                            <p class="h-aloy-text text-white-40">
+                                ○Có nhiều nguyên nhân gây ra tình trạng mòn ở ốc vít, xi lanh, v.v.
+                            </p>
+                            <ul>
+                                <li class="text-white">Có thể phân loại thành ba loại chính: mài mòn do ma sát, mài mòn
+                                    do ăn mòn và mài mòn do dính.</li>
+                            </ul>
+                        </div>
+
+                        <div class="h-aloy-block">
+                            <p class="h-aloy-text text-white-40">
+                                ○Các yếu tố sau đây được coi là nguyên nhân gây ra sự hao mòn.
+                            </p>
+                            <ul>
+                                <li class="text-white">Vật liệu và cấu trúc của vít không phù hợp với nhựa đúc.</li>
+                                <li class="text-white">Các yếu tố liên quan đến nguyên liệu nhựa (phụ gia, vật liệu gia
+                                    cố, chất tạo màu, v.v.).</li>
+                                <li class="text-white">Quá trình đúc không được thực hiện trong điều kiện tối ưu.</li>
+                                <li class="text-white">Hệ thống truyền động như trục vít và xi lanh không được căn giữa.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 d-flex flex-column align-items-center justify-content-center">
+                        <img src="../assets/img/Takumi/causes _of_wear.png" alt="Vít H-ALOY"
+                            class="img-fluid h-aloy-image mb-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h5 class="section-title text-white title-with-line mt-4 ">Ma sát và mài mòn</h5>
+                <div class="">
+                    <p class="text-light text-justify">
+                        Mài mòn ăn mòn là sự tấn công hóa học vào chu vi bên ngoài của trục vít và bề mặt bên trong của
+                        xi lanh do các thành phần hóa học ăn mòn tạo ra trong quá trình gia nhiệt và làm nóng chảy nhựa.
+                        Nhựa gốc flo thường được coi là nguồn gốc của các thành phần hóa học ăn mòn, nhưng chúng cũng có
+                        thể xuất hiện trong nhiều loại nhựa pha trộn và nhựa thơm được gọi là nhựa siêu kỹ thuật. Hiện
+                        tượng này thường dẫn đến bề mặt kim loại xuất hiện các vết rỗ, và lý do đầu trục vít dễ bị mòn
+                        là do đây là bộ phận đạt nhiệt độ cao nhất trong quá trình đúc. Biện pháp đối phó hiệu quả nhất
+                        chống lại sự mài mòn ăn mòn là thay đổi trục vít, xi lanh và các bộ phận khác bằng vật liệu thép
+                        có khả năng chống ăn mòn tuyệt vời.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h5 class="section-title text-white title-with-line mt-4 ">Ma sát và mài mòn</h5>
+                <div class="">
+                    <p class="text-light text-justify">
+                        Hao mòn keo dính xảy ra khi bề mặt trục vít và xi lanh tiếp xúc với kim loại do nhựa bám dính,
+                        v.v. Nếu điều kiện đúc không phù hợp với nhựa đúc, ma sát cục bộ sẽ xảy ra do trục vít quay,
+                        khiến chu vi ngoài của vòng kiểm tra trục vít tiếp xúc với bề mặt bên trong của xi lanh, khiến
+                        lớp cứng bị bong ra. Để tránh điều này, chúng tôi tin rằng cần phải thay đổi kết hợp vật liệu
+                        trục vít và xi lanh, cũng như thay đổi thiết kế trục vít so với nhựa đúc. Ngoài ra, cần lưu ý
+                        rằng việc căn chỉnh tâm khi lắp ráp các bộ phận có tác động đáng kể.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="../index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">TAKUMI</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p data-i18n="footer_address_line1">Số 108, Đường Adam</p>
+                        <p data-i18n="footer_address_line2">New York, NY 535022</p>
+                        <p class="mt-3">
+                            <strong data-i18n="footer_phone_label">Điện thoại:</strong>
+                            <span>+84 123 456 789</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="footer_email_label">Email:</strong>
+                            <span>lienhe@takumi.vn</span>
+                        </p>
+                    </div>
+
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4 data-i18n="footer_quick_links">Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer_link_home">Trang chủ</a></li>
+                        <li><a href="#" data-i18n="footer_link_about">Giới thiệu</a></li>
+                        <li><a href="#" data-i18n="footer_link_services">Dịch vụ</a></li>
+                        <li><a href="#" data-i18n="footer_link_terms">Điều khoản</a></li>
+                        <li><a href="#" data-i18n="footer_link_privacy">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4 data-i18n="footer_services_title">Dịch vụ của chúng tôi</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer_service_precision">Gia công cơ khí chính xác</a></li>
+                        <li><a href="#" data-i18n="footer_service_design">Thiết kế & Chế tạo máy</a></li>
+                        <li><a href="#" data-i18n="footer_service_installation">Lắp đặt hệ thống sản xuất</a></li>
+                        <li><a href="#" data-i18n="footer_service_maintenance">Bảo trì & Sửa chữa máy móc</a></li>
+                        <li><a href="#" data-i18n="footer_service_consulting">Tư vấn giải pháp tự động hóa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4 data-i18n="newsletter_title">Đăng ký nhận tin</h4>
+                    <p data-i18n="newsletter_description">
+                        Hãy để lại email để nhận thông tin mới nhất về sản phẩm và dịch vụ của chúng tôi!
+                    </p>
+                    <form action="forms/newsletter.php" method="post" class="php-email-form">
+                        <div class="newsletter-form">
+                            <input type="email" name="email" data-i18n-placeholder="newsletter_input" required>
+                            <input type="submit" value="Đăng ký" data-i18n-value="newsletter_submit">
+                        </div>
+                        <div class="loading" data-i18n="newsletter_loading">Đang gửi...</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message" data-i18n="newsletter_success">Bạn đã đăng ký thành công. Cảm ơn bạn!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>
+                © <span data-i18n="footer_copyright_prefix">Bản quyền</span>
+                <strong class="px-1 sitename">Takumi</strong>
+                <span data-i18n="footer_copyright_suffix">Đã đăng ký mọi quyền.</span>
+            </p>
+            <div class="credits" data-i18n="footer_credit">
+                Thiết kế bởi <a href="https://bootstrapmade.com/">Nhat Hao</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/i18n.js"></script>
+</body>
+
+</html>

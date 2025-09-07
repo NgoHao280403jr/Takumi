@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portfolio Details - Multi Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon">
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Multi
+  * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style>
+        .text-blue {
+            color: #5B8CD6 !important;
+            /* Ví dụ về một màu xanh dương */
+        }
+
+        hr {
+            border: none;
+            height: 5px;
+            background: linear-gradient(to right, #5B8CD6, #e3e8eb);
+            margin: 15px 0;
+        }
+
+        .custom-box {
+            background-color: #0a3d69;
+            color: white;
+        }
+
+        /* style danh sách */
+        .custom-box ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .custom-box li {
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        section {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .title-with-line {
+            position: relative;
+            display: inline-block;
+        }
+
+        .title-with-line::after {
+            content: '';
+            display: block;
+            width: 1000px;
+            height: 2px;
+            background-color: #5f1e1e;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body class="portfolio-details-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="../index.html" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="../assets/img/Takumi/LogoTakumi-removebg-preview.png" alt="">
+                <!-- <h1 class="sitename">TAKUMI</h1> -->
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="../index.html" class="active" data-i18n="home">Trang chủ</a></li>
+                    <li><a href="../about.html" data-i18n="about">Hồ sơ công ty </a></li>
+                    <li><a href="../services.html" data-i18n="services">Dịch vụ</a></li>
+                    <li class="dropdown"><a href="../products.html"><span data-i18n="portfolio">Sản phẩm</span>
+                            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="../product-type/screw_parts.html" data-i18n="menu_screw_parts"></a></li>
+                            <li><a href="../product-type/cylinder_parts.html" data-i18n="menu_cylinder_parts"></a></li>
+                            <li><a href="../product-type/parts_department.html" data-i18n="menu_parts_department"></a>
+                            </li>
+                            <li><a href="../product-type/maintenance_service.html"
+                                    data-i18n="menu_maintenance_service"></a></li>
+                            <li><a href="../product-type/parts_department.html" data-i18n="menu_design_screw"></a></li>
+                            <li><a href="../product-type/high_mixing_screw.html" data-i18n="menu_high_mixing_screw"></a>
+                            </li>
+                            <li><a href="../product-type/anti_drip_nozzle.html" data-i18n="menu_anti_drip_nozzle"></a>
+                            </li>
+                            <li><a href="../product-type/causes_of_wear.html" data-i18n="menu_causes_of_wear"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact.html" data-i18n="contact">Liên hệ</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <!-- Language switcher with emoji flags -->
+            <!-- Bootstrap dropdown chọn ngôn ngữ -->
+            <div class="dropdown ms-3">
+                <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button"
+                    id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                        <rect width="20" height="15" fill="#DA020E" />
+                        <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6" fill="#FFFF00" />
+                    </svg>
+                    Tiếng Việt
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="vi">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="#DA020E" />
+                                <polygon points="10,3 11,6 14,6 11.5,8 12.5,11 10,9 7.5,11 8.5,8 6,6 9,6"
+                                    fill="#FFFF00" />
+                            </svg>
+                            Tiếng Việt
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="en">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="#012169" />
+                                <path d="M0,0 L20,15 M20,0 L0,15" stroke="white" stroke-width="2" />
+                                <path d="M0,0 L20,15 M20,0 L0,15" stroke="#C8102E" stroke-width="1" />
+                                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="white" stroke-width="3" />
+                                <path d="M10,0 L10,15 M0,7.5 L20,7.5" stroke="#C8102E" stroke-width="2" />
+                            </svg>
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item language-option d-flex align-items-center" href="#" data-lang="ja">
+                            <svg class="me-2" width="20" height="15" viewBox="0 0 20 15" fill="none">
+                                <rect width="20" height="15" fill="white" />
+                                <circle cx="10" cy="7.5" r="4" fill="#BC002D" />
+                            </svg>
+                            日本語
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="section bg-product-header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-start blue-header-bg">
+                    <i class="bi bi-box-fill product-icon me-2 text-blue"></i>
+                    <h3 class="text-blue">Thiết kế vít để giảm thiểu cháy và tạp chất (giảm tỷ lệ lỗi và cải thiện năng
+                        suất)</h3>
+
+                </div>
+                <hr>
+                <h6>Máy ép phun Máy đùn</h6>
+                <h6>Thiết kế vít làm giảm tỷ lệ loại bỏ do vật lạ và cải thiện năng suất</h6>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h4 class="mb-0 text-white">Vấn đề và mục tiêu</h4>
+                <hr>
+            </div>
+        </section>
+        <section class="bg-gradient-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="p-4 rounded custom-box">
+                            <ul class="mb-0">
+                                <li>Cơ chế của các khuyết tật đúc có thể được làm rõ bằng cách phân tích các đặc tính
+                                    hóa học của nhựa.</li>
+                                <li>Bằng cách sử dụng kiến ​​thức này để thiết kế trục vít, có thể giảm đáng kể tỷ lệ
+                                    khuyết tật.</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="heating-section py-4">
+            <div class="container">
+                <!-- Hình ảnh -->
+                <div class="text-center">
+                    <img src="../assets/img/Takumi/screwdg1.png" class="img-fluid rounded shadow">
+                </div>
+                <!-- Nội dung -->
+                <div class="mt-4">
+                    <p class="text-light text-justify">
+                        Tại Nhật Bản, nhiễm bẩn do cháy do thủy phân và phân hủy nhiệt chiếm tới 70% các lỗi đúc nhựa.
+                        Chúng tôi tin rằng việc giảm tỷ lệ lỗi là thách thức lớn nhất mà các nhà sản xuất khuôn đúc phải
+                        đối mặt. Nói cách khác, việc giảm tỷ lệ lỗi sẽ dẫn đến cải thiện năng suất và tăng lợi nhuận.
+                        Watanabe Manufacturing đã thiết kế lại hoàn toàn các loại vít hiện đang được sử dụng, tạo ra một
+                        thiết kế vít mới được kỳ vọng sẽ giảm tỷ lệ lỗi và cải thiện năng suất, và đã đề xuất điều này
+                        cho nhiều khách hàng.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <p class="text-light text-justify">
+                        Những tiến bộ trong công nghệ sản xuất nhựa đã dẫn đến việc sử dụng rộng rãi của chúng trong các
+                        thành phần an toàn quan trọng, chẳng hạn như phụ tùng ô tô và động cơ máy bay. Điều này dẫn đến
+                        sự gia tăng về sự đa dạng của các loại nhựa có sẵn và chúng tôi tin rằng thiết kế vít phải theo
+                        kịp. Watanabe Manufacturing đã hợp tác với các nhà sản xuất hóa chất trong khoảng 15 năm. Dựa
+                        trên lượng dữ liệu khổng lồ về nhựa do các nhà sản xuất này cung cấp, chúng tôi đã thiết kế và
+                        sản xuất nhiều loại vít giúp giải quyết các vấn đề về đúc dựa trên bằng chứng khoa học, có tính
+                        đến các đặc điểm của nhiều loại nhựa khác nhau. Bằng cách thiết kế và sản xuất nhiều loại vít
+                        thiết kế, chúng tôi đã hiểu được tầm quan trọng của việc làm tan chảy hoàn toàn nhựa. Tuy nhiên,
+                        nếu không hiểu rõ các đặc điểm của nhựa, không thể thiết kế một loại vít duy trì được sự tan
+                        chảy hoàn toàn của nhựa. Mặc dù mỗi loại nhựa có các đặc điểm khác nhau, nhưng vấn đề nhiễm bẩn
+                        do cháy có thể được giải quyết bằng cách làm tan chảy nhựa đúng cách.
+                    </p>
+                </div>
+                <div class="mt-4">
+                    <p class="text-light text-justify">
+                        Thiết kế vít của Watanabe Seisakusho dựa trên kiến ​​thức về đặc tính của nhựa, và ngay cả những
+                        chi tiết nhỏ như lựa chọn vật liệu thép, tỷ lệ thể tích và bán kính chân vít cũng được cân nhắc
+                        kỹ lưỡng. Phần sau đây giới thiệu về việc lựa chọn vật liệu thép và các khái niệm cơ bản của
+                        từng bộ phận khi thiết kế và sản xuất các thiết kế gốc của Watanabe Seisakusho.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h4 class="mb-0 text-white">1. Lựa chọn thép</h4>
+                <hr>
+                <div class="mt-4">
+                    <p class="text-light text-justify">
+                        Để tránh cản trở dòng chảy của nhựa, việc lựa chọn thép có khả năng trượt tốt với nhựa (loại
+                        trượt cao) là vô cùng quan trọng. Nên chọn thép có độ cứng cao sau khi xử lý nhiệt và bề mặt
+                        gương tuyệt vời với đặc tính trượt cao. Ngoài ra, hiệu ứng gia cường do xử lý phủ chỉ được coi
+                        là tạm thời, và sau khi lớp phủ bị loại bỏ, hiệu ứng này sẽ biến mất, dẫn đến gia tăng sản phẩm
+                        lỗi. Ngoài ra, khi cân nhắc chi phí phủ lại, việc lựa chọn thép phù hợp với đặc tính của nhựa
+                        khi sản xuất vít mới sẽ tiết kiệm chi phí hơn.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h4 class="mb-0 text-white">2. Thiết kế vít</h4>
+                <hr>
+                <h5 class="section-title text-white title-with-line mt-4 ">1. Thiết kế vùng cấp liệu</h5>
+                <div class="">
+                    <p class="text-light text-justify">
+                        Để tránh cản trở dòng chảy của nhựa, việc lựa chọn thép có khả năng trượt tốt với nhựa (loại
+                        trượt cao) là vô cùng quan trọng. Nên chọn thép có độ cứng cao sau khi xử lý nhiệt và bề mặt
+                        gương tuyệt vời với đặc tính trượt cao. Ngoài ra, hiệu ứng gia cường do xử lý phủ chỉ được coi
+                        là tạm thời, và sau khi lớp phủ bị loại bỏ, hiệu ứng này sẽ biến mất, dẫn đến gia tăng sản phẩm
+                        lỗi. Ngoài ra, khi cân nhắc chi phí phủ lại, việc lựa chọn thép phù hợp với đặc tính của nhựa
+                        khi sản xuất vít mới sẽ tiết kiệm chi phí hơn.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h5 class="section-title text-white title-with-line mt-4 ">2. Thiết kế vùng nén (vùng nén, vùng nhựa
+                    Taber)</h5>
+                <div class="">
+                    <p class="text-light text-justify">
+                        Điều quan trọng là phải làm tan chảy hoàn toàn nhựa đã bị dồn lại đến một mức độ nóng chảy nhất
+                        định trong phần cung cấp ở vùng côn của phần nén. Không làm tan chảy hoàn toàn nhựa trong phần
+                        nén có thể dẫn đến ứ đọng, trộn không đủ và khí và độ ẩm chảy về phía trước. Do đó, Watanabe
+                        Manufacturing giảm thiểu khe hở và thiết kế trục vít sao cho chỉ có nhựa nóng chảy hoặc nhựa
+                        ngay trước khi nóng chảy chảy về phía trước. Hơn nữa, nén đột ngột trong phần nén có thể khiến
+                        nhựa bị ứ đọng và cháy, vì vậy nén dần dần là tốt hơn. Điều này làm tăng khối lượng riêng của
+                        nhựa, cho phép khí và độ ẩm thoát ra sau đó và ngăn chúng bị trộn lẫn vào sản phẩm. Nóng chảy
+                        hoàn toàn trong phần nén là khía cạnh quan trọng nhất của thiết kế trục vít.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h5 class="section-title text-white title-with-line mt-4 ">3. Thiết kế vùng kim loại hóa (vùng nóng chảy
+                    đồng đều, vùng định lượng)</h5>
+                <div class="">
+                    <p class="text-light text-justify">
+                        Mục đích của bộ phận định lượng là cải thiện chất lượng sản phẩm bằng cách làm nóng chảy đồng
+                        đều nhựa đã được làm nóng chảy hoàn toàn trong bộ phận nén. Tại Watanabe Seisakusho, chúng tôi
+                        gọi đây là bộ phận làm nóng chảy đồng đều, và vì việc trộn lẫn không cần thiết trong bộ phận này
+                        có thể dẫn đến hư hỏng sản phẩm, nên cần thiết kế bộ phận này sao cho việc vận chuyển được trơn
+                        tru.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h5 class="section-title text-white title-with-line mt-4 ">4. Thiết kế ba phần</h5>
+                <div class="">
+                    <p class="text-light text-justify">
+                        Ngay cả khi thiết kế vít hoàn hảo, nếu ba thành phần được thiết kế kém, các bộ phận này có thể
+                        gây ra lỗi. Điều quan trọng là phải ngăn nhựa tích tụ, do đó thiết kế đòi hỏi khe hở lớn giữa
+                        vòng kiểm tra và vòng đệm để nhựa được vận chuyển trơn tru từ vít. Cũng cần phải xem xét khe hở
+                        giữa đường kính trong của vòng kiểm tra và đường kính ngoài của đầu vít. Nếu lượng nhựa đi qua
+                        nhỏ, nhựa sẽ bị kẹt, gây bỏng và các vấn đề khác. Điều quan trọng nữa là phải cẩn thận để giảm
+                        thiểu khe hở giữa vòng kiểm tra và xi lanh. Độ chính xác của bề mặt tiếp xúc giữa vòng kiểm tra
+                        và vòng đệm cũng rất quan trọng.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section bg-product-header">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-start blue-header-bg">
+                    <i class="bi bi-box-fill product-icon me-2 text-blue"></i>
+                    <h3 class="text-blue">Ví dụ về việc giảm thiểu các khuyết tật nhiễm bẩn trong thiết kế vít</h3>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h4 class="mb-0 text-white">Sản phẩm đúc: Đầu nối ô tô Nhựa: Nylon thơm</h4>
+                <hr>
+                <div class="text-center"> <img src="../assets/img/Takumi/screwdg2.jpg" alt="Các loại vít được phủ lớp"
+                        class="img-fluid coating-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="../index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">TAKUMI</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p data-i18n="footer_address_line1">Số 108, Đường Adam</p>
+                        <p data-i18n="footer_address_line2">New York, NY 535022</p>
+                        <p class="mt-3">
+                            <strong data-i18n="footer_phone_label">Điện thoại:</strong>
+                            <span>+84 123 456 789</span>
+                        </p>
+                        <p>
+                            <strong data-i18n="footer_email_label">Email:</strong>
+                            <span>lienhe@takumi.vn</span>
+                        </p>
+                    </div>
+
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4 data-i18n="footer_quick_links">Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer_link_home">Trang chủ</a></li>
+                        <li><a href="#" data-i18n="footer_link_about">Giới thiệu</a></li>
+                        <li><a href="#" data-i18n="footer_link_services">Dịch vụ</a></li>
+                        <li><a href="#" data-i18n="footer_link_terms">Điều khoản</a></li>
+                        <li><a href="#" data-i18n="footer_link_privacy">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4 data-i18n="footer_services_title">Dịch vụ của chúng tôi</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer_service_precision">Gia công cơ khí chính xác</a></li>
+                        <li><a href="#" data-i18n="footer_service_design">Thiết kế & Chế tạo máy</a></li>
+                        <li><a href="#" data-i18n="footer_service_installation">Lắp đặt hệ thống sản xuất</a></li>
+                        <li><a href="#" data-i18n="footer_service_maintenance">Bảo trì & Sửa chữa máy móc</a></li>
+                        <li><a href="#" data-i18n="footer_service_consulting">Tư vấn giải pháp tự động hóa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4 data-i18n="newsletter_title">Đăng ký nhận tin</h4>
+                    <p data-i18n="newsletter_description">
+                        Hãy để lại email để nhận thông tin mới nhất về sản phẩm và dịch vụ của chúng tôi!
+                    </p>
+                    <form action="forms/newsletter.php" method="post" class="php-email-form">
+                        <div class="newsletter-form">
+                            <input type="email" name="email" data-i18n-placeholder="newsletter_input" required>
+                            <input type="submit" value="Đăng ký" data-i18n-value="newsletter_submit">
+                        </div>
+                        <div class="loading" data-i18n="newsletter_loading">Đang gửi...</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message" data-i18n="newsletter_success">Bạn đã đăng ký thành công. Cảm ơn bạn!
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>
+                © <span data-i18n="footer_copyright_prefix">Bản quyền</span>
+                <strong class="px-1 sitename">Takumi</strong>
+                <span data-i18n="footer_copyright_suffix">Đã đăng ký mọi quyền.</span>
+            </p>
+            <div class="credits" data-i18n="footer_credit">
+                Thiết kế bởi <a href="https://bootstrapmade.com/">Nhat Hao</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/i18n.js"></script>
+</body>
+
+</html>
